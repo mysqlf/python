@@ -1,0 +1,9 @@
+from scrapy.spider import Spider
+
+class DmozSpider(Spider):
+        name="dmoz"
+        allowed_domains=['dmoz.org']
+        start_url=["http://www.dmoz.org/Computers/Programming/Languages/Python/Books/","http://www.dmoz.org/Computers/Programming/Languages/Python/Resources/"]
+        def parse(self,response):
+                filename=response.url.split("/")[-2]
+                open(filename,'wb').write(response.body)
