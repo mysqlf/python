@@ -7,9 +7,10 @@ class TutorialPipeline(object):
 
     def process_item(self, item, spider):
         for word in self.words_to_filter:
-            if word in unicode(item['description']).lower():
+            if word in item['name']:
                 raise DropItem("Contains forbidden word: %s" % word)
-        else:
-            return item
+            else:
+                pass
+        return item
 class FilterWordsPipeline(object):
     pass
