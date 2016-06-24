@@ -15,6 +15,8 @@ SPIDER_MODULES = ['tutorial.spiders']
 NEWSPIDER_MODULE = 'tutorial.spiders'
 ITEM_PIPELINES = {'tutorial.pipelines.TutorialPipeline': 1}
 
+FEED_URI = 'blog.xml'
+FEED_FORMAT = 'xml'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'tutorial (+http://www.yourdomain.com)'
 

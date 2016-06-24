@@ -8,9 +8,7 @@ class TutorialPipeline(object):
     def process_item(self, item, spider):
         for word in self.words_to_filter:
             if word in item['name']:
-                raise DropItem("Contains forbidden word: %s" % word)
+                raise DropItem("Contains forbidden word: %s" % word)#异常处理
             else:
                 pass
         return item
-class FilterWordsPipeline(object):
-    pass
