@@ -157,21 +157,89 @@ def cj(x,y):
 from functools import reduce
 # s=reduce(cj,[1,4,5,6,7,8,9])
 # print(s)
-def add(x,y):
-	return x+y
-def str2float(str):
-	n = str.index('.')
-	l=str.split('.')
+
+#字符转浮点数
+# def str2float(str):
+# 	def add(x,y):
+# 		return x+y
+# 	n = str.index('.')
+# 	l=str.split('.')
+# 	if n==0:
+# 		l[0]=0
+# 		cd=len(l[1])
+# 		tmp=list(map(int,l))
+# 		tmp[1]=tmp[1]/(10**cd)
+# 		return reduce(add,tmp)
+# 	elif n==len(str)-1:
+# 		return int(l[0])
+# 	elif len(l)==2:
+# 		cd=len(l[1])
+# 		tmp=list(map(int,l))
+# 		tmp[1]=tmp[1]/(10**cd)
+# 		return reduce(add,tmp)
+# x=str2float('1.1')
+# x=x*1.1
+# print(x)
+# 
+
+
+#filter 筛选函数(删掉返回未false的数值)(需要两个参数,一个为判断函数,一个为一个list)
+# # 
+# def is_two(n):
+# 	return n%2==1
+# #删掉返回false的
+# x=list(filter(is_two,[1,2,3,4,5,6,7,8,9,11,12]))
+# print(x)
+
+#筛选素数
+# def make_list():
+# 	n=1
+# 	while True:
+# 		n=n+2
+# 		yield n
+# def filter_ss(n):
+# 	return lambda x:x%n>0
+# def primes():
+# 	yield 2
+# 	it=make_list()
+# 	while True:
+# 		n=next(it)
+# 		yield n
+# 		it=filter(filter_ss(n),it)
+# for n in primes():
+# 	if n<1000:
+# 		print(n)
+# 	else:
+# 		break
+
+#回数:把数字翻转再比对相等即可判断是否为回数
+# def filter_hs(n):
+# 	n1=list(str(n))
+# 	n2=list(str(n))
+# 	n1.reverse()
+# 	if n2==n1:
+# 		return True
+# output = list(filter(filter_hs, range(1, 10000)))
+# print(output)
+
+#列表排序函数
+#key数据经过该方法处理后再排序
+#是先将整个数列全部经过该函数处理生成一个新的临时数列,再进行排序
+#reverse倒序
+l=sorted([9,-3,-1,8,6,7],key=abs, reverse=True)
+print(l)
+
+def by_name(x):
+	l=[]
+	l.append(x[0])
 	return l
-	if n==0:
-		
-	elif n==len(str)-1:
-		return int(l[0])
-	elif len(l)==2:
-		cd=len(l[1])
-		tmp=list(map(int,l))
-		tmp[1]=tmp[1]/(10**cd)
-		return reduce(add,tmp)
-	
-x=str2float('1.')
-print(x)
+
+def by_socre(x):
+	l=[]
+	l.append(x[1])
+	return l
+L = [('Bob', 75), ('Adam', 92), ('Bart', 66), ('Lisa', 88)]
+l=sorted(L,key=by_name)
+print(l)
+l=sorted(L,key=by_socre,reverse=True)
+print(l)
