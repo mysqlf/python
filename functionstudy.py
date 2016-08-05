@@ -224,22 +224,107 @@ from functools import reduce
 
 #列表排序函数
 #key数据经过该方法处理后再排序
+
 #是先将整个数列全部经过该函数处理生成一个新的临时数列,再进行排序
 #reverse倒序
-l=sorted([9,-3,-1,8,6,7],key=abs, reverse=True)
-print(l)
+# l=sorted([9,-3,-1,8,6,7],key=abs, reverse=True)
+# print(l)
 
-def by_name(x):
-	l=[]
-	l.append(x[0])
-	return l
+# def by_name(x):
+# 	l=[]
+# 	#将原有数列的数值一个个的传过去,而不是整个数列传过去,所以原有数列是二维的话,在内部处理就变成处理一维的
+# 	l.append(x[0])
+# 	return l
 
-def by_socre(x):
-	l=[]
-	l.append(x[1])
-	return l
-L = [('Bob', 75), ('Adam', 92), ('Bart', 66), ('Lisa', 88)]
-l=sorted(L,key=by_name)
-print(l)
-l=sorted(L,key=by_socre,reverse=True)
-print(l)
+# def by_socre(x):
+# 	l=[]
+# 	l.append(x[1])
+# 	return l
+# L = [('Bob', 75), ('Adam', 92), ('Bart', 66), ('Lisa', 88)]
+# l=sorted(L,key=by_name)
+# print(l)
+# l=sorted(L,key=by_socre,reverse=True)
+# print(l)
+
+#将函数作为返回值
+# def count():
+# 	def f(j):
+# 		def g():
+# 			return j*j
+# 		return g
+# 	fs=[]
+# 	for i in range(1,5):
+# 		fs.append(f(i))
+# 	return fs
+
+# f1,f2,f3,f4=count()
+# print(f1())
+# print(f2())
+# print(f3())
+# print(f4())
+
+#匿名函数
+# k=lambda x:[s for s in range(1,x)]
+# l=k(10)
+# print(l)
+# 
+# 
+# def now():
+# 	print('2016-08-04')
+# f=now
+# f()
+# print(f.__name__)
+
+
+#装饰器
+# def log(func):
+# 	def wraper(*args,**kw):
+# 		print('call %s():'% func.__name__)
+# 		return func(*args,**kw)
+# 	return wraper
+# @log
+# def now():
+# 	print('20160804')
+# now()
+# now=log(now)
+# now()
+
+# def log(text):
+# 	def decorator(func):
+# 		def wrapper(*a,**k):
+# 			print('%s %s():'%(text,func.__name__))
+# 			return func(*a,**k)
+# 		return wrapper
+# 	return decorator
+# @log('execute')
+# def nows():
+# 	print('123456789')
+# nows()
+# print(nows.__name__)
+
+# import functools
+# def log(func):
+# 	@functools.wraps(func)
+# 	def wrapper(*a,**k):
+# 		print('call %s():' %func.__name__)
+# 		return func(*a,**k)
+# 	return wrapper
+# @log
+# def now():
+# 	print('123')
+# now()
+# print(now.__name__)
+# 
+#偏函数相当于给函数某一个参数绑定默认值
+#只需要一行即可完成
+# import functools
+# int2=functools.partial(int,base=2)
+# print(int2('100100'))
+# def int3(x,base=2):
+# 	return int(x,base)
+# print(int3('1111'))
+# 测试自己的想法
+# def test(x,y,z):
+# 	return x*y*z
+# test1=functools.partial(test,y=3,z=4)
+# print(test1(2))
