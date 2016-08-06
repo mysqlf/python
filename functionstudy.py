@@ -328,3 +328,19 @@ from functools import reduce
 # 	return x*y*z
 # test1=functools.partial(test,y=3,z=4)
 # print(test1(2))
+# 
+# 
+# 导入模块学习
+# 1,导入直接的函数,函数可直接调用
+# from test import my_func
+# my_func()
+# from test import my_test
+# x=my_test(10)
+# print(x)
+
+#2导入整个文件
+#函数要在该文件后面使用点形式调用
+# import test
+# test.my_func()
+# x=test.my_test(10)
+# print(x)
