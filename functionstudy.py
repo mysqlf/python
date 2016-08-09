@@ -344,3 +344,44 @@ from functools import reduce
 # test.my_func()
 # x=test.my_test(10)
 # print(x)
+# import test
+# test.my_func()
+# import sys
+# print(sys.path)
+# sys.path.append('D:\Git\python')
+# print(sys.path)
+# class Student(object):
+# 	def __init__(self,name,score):
+# 		self.name=name
+# 		self.score=score
+# 	def print_score(self):
+# 		print('%s:%s' %(self.name,self.score))
+# A=Student('As',100)
+# B=Student('B',99)
+# A.print_score()
+# B.print_score()
+# print(A.name)
+# A.name='ASD';
+# print(A.name)#可以改变属性的值
+# print(A)#输出A在内存中的位置
+
+#变量加上__代表变量私有,只能在本类中访问,对象不能访问,在类外不能通过直接赋值修改属性值
+#修改属性可以通过在类中定义相关方法来进行修改
+# class Student1(object):
+# 	def __init__(self,name,score):
+# 		self.__name=name
+# 		self.__score=score
+# 	def print_score(self):
+# 		print('%s:%s' %(self.__name,self.__score))
+# 	def getname(self):
+# 		return self.__name
+# 	def getscore(self):
+# 		return self.__score
+# 	def setname(self,name):
+# 		self.__name=name
+# A1=Student1('A','90')
+# #print(A1.__name)#这句会报错
+# print(A1.getname())
+# A1.setname('QWE')
+# print(A1.getname())
+# A1.print_score()
