@@ -582,3 +582,24 @@ def run_t(tmp):
 # print(k[1:2])#从下标1取到下标2,取的其实是下标为1的值
 # print(k[2:3])#从下标2取到下标3,取的其实是下标为2的值
 # print(k[2])
+# 
+# #多继承学习
+# class Animal(object):
+# 	pass
+
+# class Mammal(Animal):
+# 	pass
+# class Bird(Animal):
+# 	pass
+
+# class Run(object):
+# 	def run(self):
+# 		print('Running')
+# class Fly(object):
+# 	def fly(self):
+# 		print('Flying')
+# #多继承		
+# class Dog(Mammal,Run):
+# 	pass
+# d=Dog()
+# d.run()
