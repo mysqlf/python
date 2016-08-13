@@ -9,25 +9,25 @@ def checkint(x):
 	else:
 		return False
 	
-def jiecheng(x):
-	ck=checktype(x,int)
-	su=1
-	if ck==True:
-		if x<0:
-			x=abs(x)
-			for i in range(1,x+1):
-				su=su*i
-			y=x%2
-			if y==0:
-				return su
-			else:
-				return -su
-		else:
-			for i in range(1,x+1):
-				su=su*i
-			return su
-	else:
-		return "输入错误"
+# def jiecheng(x):
+# 	ck=checktype(x,int)
+# 	su=1
+# 	if ck==True:
+# 		if x<0:
+# 			x=abs(x)
+# 			for i in range(1,x+1):
+# 				su=su*i
+# 			y=x%2
+# 			if y==0:
+# 				return su
+# 			else:
+# 				return -su
+# 		else:
+# 			for i in range(1,x+1):
+# 				su=su*i
+# 			return su
+# 	else:
+# 		return "输入错误"
 	
 
 
@@ -380,8 +380,205 @@ from functools import reduce
 # 	def setname(self,name):
 # 		self.__name=name
 # A1=Student1('A','90')
-# #print(A1.__name)#这句会报错
+# A1.__name="ZXCB"#无效
 # print(A1.getname())
+# A1._Student1__name="ZXC"#有效,但不建议这样修改
+# print(A1.getname())
+#print(A1.__name)#这句会报错
+
 # A1.setname('QWE')
 # print(A1.getname())
 # A1.print_score()
+# 
+ 
+class Animal(object):
+	def run(self):
+		print('Animal running')
+
+	def eat(self):
+		print('Animal Eating')
+
+
+
+
+# 情形1
+class Dog(Animal):
+	pass
+	#print('Dog running')
+class Cat(Animal):
+	pass
+	#print('Cat running')
+D=Dog()
+# D.run()
+# D.eat()
+C=Cat()
+# C.run()
+# C.eat()
+# def run_t(tmp):
+# 	tmp.run()
+# run_t(Animal())
+# run_t(Dog())
+# run_t(Cat())
+# D:\Git\python>functionstudy.py  #运行结果
+# Dog running
+# Cat running
+# Animal running
+# Animal running
+# Animal running	
+# 
+# 情形2
+# class Dog(Animal):
+# 	def run(self):
+# 		print('Dog running')
+# class Cat(Animal):
+# 	def run(self):
+# 		print('Cat running')
+# 		
+def run_t(tmp):
+	tmp.run()
+# run_t(Animal())
+# run_t(Dog())
+# run_t(Cat())
+# 
+# D:\Git\python>functionstudy.py
+# Animal running
+# Dog running
+# Cat running
+
+
+# print(isinstance(D,Dog)) #判断对象类型
+# print(isinstance(C,Cat))
+# print(isinstance(C,Animal))
+# 
+# type函数 获取对象信息
+# print(type(123))
+# <class 'int'>
+# print(type(D))
+# <class '__main__.Dog'>
+# print(type(abs))
+# <class 'builtin_function_or_method'>
+# print(type(run_t)==types.FunctionType)
+# #True
+# print(type(run_t))
+# #<class 'function'>
+# print(type(lambda x:x)==types.LambdaType)
+# dir可以获取所有的方法
+# print(dir(D))
+# ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__','__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'eat', 'run']
+# print('ABC'.__len__())
+#
+#
+# class Student(object):
+# 	name="Student"
+# 	def __init__(self,name):
+# 		self.name=name
+# s=Student('bob')
+
+# print(s.name)
+# #bob
+# print(Student.name)
+# #Student
+
+# class Word(object):
+# 	def __init__(self,text):
+# 		self.text=text
+# 	def equal(self,word1):
+# 		return self.text.lower()==word1.text.lower()
+# 	def equal1(self,word2):
+# 		return self.text.lower()==word2.lower()
+# w=Word('qwert')
+# x=w.equal(Word('Qwert'))
+# print(x)
+# True
+# x=w.equal1('QWERT')
+# print(x)
+# True
+#  
+#  #类的方法绑定,可以在使用时实时添加类所缺少的方法,这个类的所有的对象都能使用
+# class Student(object):
+# 	pass
+# s=Student()
+# #给对象绑定属性,这个属性
+# s.name="zl"
+# #print(s.name)
+
+
+# def set_age(self,age):
+# 	self.age=age
+# from types import MethodType
+# #给对象绑定方法,这个方法只能这个对象使用,不是这个类的方法
+# s.set_age=MethodType(set_age,s)
+# s.set_age(23)
+# #print(s.age)
+# #给类绑定属性,类与对象都可以使用,包括后面绑定的方法
+# def set_score(self,score):
+# 	self.score=score
+# Student.set_score=set_score
+# s.set_score(1000)
+# #print(s.score)
+
+# def get_score(self):
+# 	print(self.score)
+# Student.get_score=get_score
+# s.get_score()
+
+# class Student(object):
+# 	__slots__=('name','age')
+
+# # s.name="zl"
+# # print(s.name)
+# # s.age=23
+# # print(s.age)
+# # s.score=100
+# # print(s.score)
+# class Student(object):	
+# 	def get_score(self):
+# 		print(self._score)
+
+# 	def set_score(self,score):
+# 		if not isinstance(score,int):
+# 			raise ValueError('not int')
+# 		if score<0 or score>100:
+# 			raise ValueError('not 1~100')
+# 		self._score=score
+# s=Student()
+# # s.set_score('qwe')
+# # #ValueError: not int
+# # s.set_score(1000)
+# # #ValueError: not 1~100
+# s.set_score(99)
+# s.get_score()
+# #99
+# 
+# #将类方法当做属性来调用
+# class Student(object):
+# 	@property	
+# 	def score(self):
+# 		print(self._score)
+# 	@score.setter
+# 	def score(self,score):
+# 		if not isinstance(score,int):
+# 			raise ValueError('not int')
+# 		if score<0 or score>100:
+# 			raise ValueError('not 1~100')
+# 		self._score=score
+# 	@property
+# 	def values(self):
+# 		print('%s:%s'%(self.name,self.age))
+# 	@values.setter
+# 	def values(self,va):
+# 		self.name=va[0]
+# 		self.age=va[1]
+# s=Student()
+# # s.score=99#等于调用了 set_score(self,score):
+# # s.score#等于get_score(self):
+
+# s.values=['zl',23]
+# s.values
+# #切片
+# k=[1,2,3,4]
+# print(k[0:1])
+# print(k[0:2])#从下标0取到下标2,取的其实是下标为0,1的值
+# print(k[1:2])#从下标1取到下标2,取的其实是下标为1的值
+# print(k[2:3])#从下标2取到下标3,取的其实是下标为2的值
+# print(k[2])
