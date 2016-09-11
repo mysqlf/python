@@ -155,8 +155,8 @@ tmp=list(map(up,['zAx','XXX','CzA']))
 def cj(x,y):
 	return x*y
 from functools import reduce
-# s=reduce(cj,[1,4,5,6,7,8,9])
-# print(s)
+s=reduce(cj,[1,4,5,6,7,8,9])
+print(s)
 
 #字符转浮点数
 # def str2float(str):
