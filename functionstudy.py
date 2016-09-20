@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# 
-
+#
 import types
+
+
 def checkint(x):
-	if type(x) == type(1):
-		return True
-	else:
-		return False
-	
+    if type(x) == type(1):
+        return True
+    else:
+        return False
+
 # def jiecheng(x):
 # 	ck=checktype(x,int)
 # 	su=1
@@ -28,20 +29,21 @@ def checkint(x):
 # 			return su
 # 	else:
 # 		return "输入错误"
-	
 
 
 def myabs(x):
-	if x>0:
-		return x
-	else:
-		return -x
-#int str list dict tuple
-def checktype(value,typ):	
-	if isinstance(value,typ):
-	    return True
-	else:
-	    return False
+    if x > 0:
+        return x
+    else:
+        return -x
+# int str list dict tuple
+
+
+def checktype(value, typ):
+    if isinstance(value, typ):
+        return True
+    else:
+        return False
 # x=jiecheng(12)
 # print(hex(x))
 
@@ -56,7 +58,7 @@ def checktype(value,typ):
 # l=[m+n for m in 'ABC' for n in 'XYX']
 # print(l)
 
-#函数斐波那契数列
+# 函数斐波那契数列
 # def fb(max):
 # 	n,a,b=0,0,1
 # 	sl=[]
@@ -76,7 +78,7 @@ def checktype(value,typ):
 #         print('Generator return value:', e.value)
 #         break
 
-#杨辉三角
+# 杨辉三角
 # def triangles(max):
 #     a = [1]
 #     k=0
@@ -88,8 +90,8 @@ def checktype(value,typ):
 #         k=k+1
 #     return n
 # test=triangles(10)
-# 
-#输出生成器内容需要使用捕捉异常的方式
+#
+# 输出生成器内容需要使用捕捉异常的方式
 # while True:
 #     try:
 #         x = next(test)
@@ -99,30 +101,26 @@ def checktype(value,typ):
 #         break
 
 
-			
-
-
-
 # x=checktype('abc',str)
 # print(x)
-	# if isinstance(b,list):
-	#     print "b is list"
-	# else:
-	#     print "b is not list"
-	# if isinstance(c,tuple):
-	#     print "c is tuple"
-	# else:
-	#     print "c is not tuple"
-	# if isinstance(d,dict):
-	#     print "d is dict"
-	# else:
-	#     print "d is not dict"
-	# if isinstance(e,str):
-	#     print "d is str"
-	# else:
-	#     print "d is not str"		
-#map 的使用 map将列表运算,返回还是列表 
-#reduce 将列表按函数来迭代进行运算,运算的函数需要且只要两个参数
+    # if isinstance(b,list):
+    #     print "b is list"
+    # else:
+    #     print "b is not list"
+    # if isinstance(c,tuple):
+    #     print "c is tuple"
+    # else:
+    #     print "c is not tuple"
+    # if isinstance(d,dict):
+    #     print "d is dict"
+    # else:
+    #     print "d is not dict"
+    # if isinstance(e,str):
+    #     print "d is str"
+    # else:
+    #     print "d is not str"
+# map 的使用 map将列表运算,返回还是列表
+# reduce 将列表按函数来迭代进行运算,运算的函数需要且只要两个参数
 # def f(x):
 #     return x*x
 # r=map(f,[1,2,3,4,5,6,7,8,9])
@@ -133,7 +131,7 @@ def checktype(value,typ):
 #     except StopIteration as e:
 #         print('Generator return value:', e.value)
 #         break
-#         
+#
 # reduce 使用
 # from functools import reduce
 # def su(x,y):
@@ -146,19 +144,20 @@ def checktype(value,typ):
 # print(s)
 
 def up(str):
-	return str.capitalize()
-#x=up('AAAA')
-#print(x)
-tmp=list(map(up,['zAx','XXX','CzA']))
+    return str.capitalize()
+# x=up('AAAA')
+# print(x)
+tmp = list(map(up, ['zAx', 'XXX', 'CzA']))
 # print(tmp)
 
-def cj(x,y):
-	return x*y
+
+def cj(x, y):
+    return x * y
 from functools import reduce
 # s=reduce(cj,[1,4,5,6,7,8,9])
 # print(s)
 
-#字符转浮点数
+# 字符转浮点数
 # def str2float(str):
 # 	def add(x,y):
 # 		return x+y
@@ -180,18 +179,18 @@ from functools import reduce
 # x=str2float('1.1')
 # x=x*1.1
 # print(x)
-# 
+#
 
 
-#filter 筛选函数(删掉返回未false的数值)(需要两个参数,一个为判断函数,一个为一个list)
-# # 
+# filter 筛选函数(删掉返回未false的数值)(需要两个参数,一个为判断函数,一个为一个list)
+# #
 # def is_two(n):
 # 	return n%2==1
 # #删掉返回false的
 # x=list(filter(is_two,[1,2,3,4,5,6,7,8,9,11,12]))
 # print(x)
 
-#筛选素数
+# 筛选素数
 # def make_list():
 # 	n=1
 # 	while True:
@@ -212,7 +211,7 @@ from functools import reduce
 # 	else:
 # 		break
 
-#回数:把数字翻转再比对相等即可判断是否为回数
+# 回数:把数字翻转再比对相等即可判断是否为回数
 # def filter_hs(n):
 # 	n1=list(str(n))
 # 	n2=list(str(n))
@@ -222,11 +221,11 @@ from functools import reduce
 # output = list(filter(filter_hs, range(1, 10000)))
 # print(output)
 
-#列表排序函数
-#key数据经过该方法处理后再排序
+# 列表排序函数
+# key数据经过该方法处理后再排序
 
-#是先将整个数列全部经过该函数处理生成一个新的临时数列,再进行排序
-#reverse倒序
+# 是先将整个数列全部经过该函数处理生成一个新的临时数列,再进行排序
+# reverse倒序
 # l=sorted([9,-3,-1,8,6,7],key=abs, reverse=True)
 # print(l)
 
@@ -246,7 +245,7 @@ from functools import reduce
 # l=sorted(L,key=by_socre,reverse=True)
 # print(l)
 
-#将函数作为返回值
+# 将函数作为返回值
 # def count():
 # 	def f(j):
 # 		def g():
@@ -263,12 +262,12 @@ from functools import reduce
 # print(f3())
 # print(f4())
 
-#匿名函数
+# 匿名函数
 # k=lambda x:[s for s in range(1,x)]
 # l=k(10)
 # print(l)
-# 
-# 
+#
+#
 # def now():
 # 	print('2016-08-04')
 # f=now
@@ -276,7 +275,7 @@ from functools import reduce
 # print(f.__name__)
 
 
-#装饰器
+# 装饰器
 # def log(func):
 # 	def wraper(*args,**kw):
 # 		print('call %s():'% func.__name__)
@@ -314,9 +313,9 @@ from functools import reduce
 # 	print('123')
 # now()
 # print(now.__name__)
-# 
-#偏函数相当于给函数某一个参数绑定默认值
-#只需要一行即可完成
+#
+# 偏函数相当于给函数某一个参数绑定默认值
+# 只需要一行即可完成
 # import functools
 # int2=functools.partial(int,base=2)
 # print(int2('100100'))
@@ -328,8 +327,8 @@ from functools import reduce
 # 	return x*y*z
 # test1=functools.partial(test,y=3,z=4)
 # print(test1(2))
-# 
-# 
+#
+#
 # 导入模块学习
 # 1,导入直接的函数,函数可直接调用
 # from test import my_func
@@ -338,8 +337,8 @@ from functools import reduce
 # x=my_test(10)
 # print(x)
 
-#2导入整个文件
-#函数要在该文件后面使用点形式调用
+# 2导入整个文件
+# 函数要在该文件后面使用点形式调用
 # import test
 # test.my_func()
 # x=test.my_test(10)
@@ -365,8 +364,8 @@ from functools import reduce
 # print(A.name)#可以改变属性的值
 # print(A)#输出A在内存中的位置
 
-#变量加上__代表变量私有,只能在本类中访问,对象不能访问,在类外不能通过直接赋值修改属性值
-#修改属性可以通过在类中定义相关方法来进行修改
+# 变量加上__代表变量私有,只能在本类中访问,对象不能访问,在类外不能通过直接赋值修改属性值
+# 修改属性可以通过在类中定义相关方法来进行修改
 # class Student1(object):
 # 	def __init__(self,name,score):
 # 		self.__name=name
@@ -384,34 +383,35 @@ from functools import reduce
 # print(A1.getname())
 # A1._Student1__name="ZXC"#有效,但不建议这样修改
 # print(A1.getname())
-#print(A1.__name)#这句会报错
+# print(A1.__name)#这句会报错
 
 # A1.setname('QWE')
 # print(A1.getname())
 # A1.print_score()
-# 
- 
+#
+
 class Animal(object):
-	def run(self):
-		print('Animal running')
 
-	def eat(self):
-		print('Animal Eating')
+    def run(self):
+        print('Animal running')
 
-
+    def eat(self):
+        print('Animal Eating')
 
 
 # 情形1
 class Dog(Animal):
-	pass
-	#print('Dog running')
+    pass
+    #print('Dog running')
+
+
 class Cat(Animal):
-	pass
-	#print('Cat running')
-D=Dog()
+    pass
+    #print('Cat running')
+D = Dog()
 # D.run()
 # D.eat()
-C=Cat()
+C = Cat()
 # C.run()
 # C.eat()
 # def run_t(tmp):
@@ -424,8 +424,8 @@ C=Cat()
 # Cat running
 # Animal running
 # Animal running
-# Animal running	
-# 
+# Animal running
+#
 # 情形2
 # class Dog(Animal):
 # 	def run(self):
@@ -433,13 +433,15 @@ C=Cat()
 # class Cat(Animal):
 # 	def run(self):
 # 		print('Cat running')
-# 		
+#
+
+
 def run_t(tmp):
-	tmp.run()
+    tmp.run()
 # run_t(Animal())
 # run_t(Dog())
 # run_t(Cat())
-# 
+#
 # D:\Git\python>functionstudy.py
 # Animal running
 # Dog running
@@ -449,7 +451,7 @@ def run_t(tmp):
 # print(isinstance(D,Dog)) #判断对象类型
 # print(isinstance(C,Cat))
 # print(isinstance(C,Animal))
-# 
+#
 # type函数 获取对象信息
 # print(type(123))
 # <class 'int'>
@@ -493,7 +495,7 @@ def run_t(tmp):
 # x=w.equal1('QWERT')
 # print(x)
 # True
-#  
+#
 #  #类的方法绑定,可以在使用时实时添加类所缺少的方法,这个类的所有的对象都能使用
 # class Student(object):
 # 	pass
@@ -531,7 +533,7 @@ def run_t(tmp):
 # # print(s.age)
 # # s.score=100
 # # print(s.score)
-# class Student(object):	
+# class Student(object):
 # 	def get_score(self):
 # 		print(self._score)
 
@@ -549,10 +551,10 @@ def run_t(tmp):
 # s.set_score(99)
 # s.get_score()
 # #99
-# 
+#
 # #将类方法当做属性来调用
 # class Student(object):
-# 	@property	
+# 	@property
 # 	def score(self):
 # 		print(self._score)
 # 	@score.setter
@@ -582,7 +584,7 @@ def run_t(tmp):
 # print(k[1:2])#从下标1取到下标2,取的其实是下标为1的值
 # print(k[2:3])#从下标2取到下标3,取的其实是下标为2的值
 # print(k[2])
-# 
+#
 # #多继承学习
 # class Animal(object):
 # 	pass
@@ -598,7 +600,7 @@ def run_t(tmp):
 # class Fly(object):
 # 	def fly(self):
 # 		print('Flying')
-# #多继承		
+# #多继承
 # class Dog(Mammal,Run):
 # 	pass
 # d=Dog()

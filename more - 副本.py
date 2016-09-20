@@ -8,7 +8,7 @@
 #     print('I am child process (%s) and my parent is %s.' % (os.getpid(), os.getppid()))
 # else:
 #     print('I (%s) just created a child process (%s).' % (os.getpid(), pid))
-#多进程实例
+# 多进程实例
 #  from multiprocessing import Process
 # import os
 # def run_proc(name):
@@ -25,7 +25,7 @@
 # Run child process test(7444)...
 # Child process end
 
-#多进程实例
+# 多进程实例
 # from multiprocessing import Pool
 # import os,time,random
 # def long_time_task(name):
@@ -77,9 +77,11 @@
 
 # Exit code : 0
 
-# import subprocess
-# print('$ nslookup')
-# p=subprocess.Popen(['nslookup'],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
-# output, err = p.communicate(b'set q=mx\npython.org\nexit\n')#这一段将作为输入参数传入函数内,实际使用可使用获取输入传递方式
-# print(output.decode('latin-1').encode('utf-8'))
-# print('Exit code:',p.returncode)
+import subprocess
+print('$ nslookup')
+p = subprocess.Popen(['nslookup'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+output, err = p.communicate(b'set q=mx\npython.org\nexit\n')
+print(output.decode('ascii'))
+exit()
+print(output.decode('latin-1').encode("utf-8"))
+print('Exit code:', p.returncode)
