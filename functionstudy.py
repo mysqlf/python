@@ -11,24 +11,24 @@ def checkint(x):
         return False
 
 # def jiecheng(x):
-# 	ck=checktype(x,int)
-# 	su=1
-# 	if ck==True:
-# 		if x<0:
-# 			x=abs(x)
-# 			for i in range(1,x+1):
-# 				su=su*i
-# 			y=x%2
-# 			if y==0:
-# 				return su
-# 			else:
-# 				return -su
-# 		else:
-# 			for i in range(1,x+1):
-# 				su=su*i
-# 			return su
-# 	else:
-# 		return "输入错误"
+#   ck=checktype(x,int)
+#   su=1
+#   if ck==True:
+#       if x<0:
+#           x=abs(x)
+#           for i in range(1,x+1):
+#               su=su*i
+#           y=x%2
+#           if y==0:
+#               return su
+#           else:
+#               return -su
+#       else:
+#           for i in range(1,x+1):
+#               su=su*i
+#           return su
+#   else:
+#       return "输入错误"
 
 
 def myabs(x):
@@ -50,9 +50,9 @@ def checktype(value, typ):
 
 # d={'a':1,'b':2,'c':3}
 # for k,v in d.items():
-# 	print(k,v)
+#   print(k,v)
 # for k,v in enumerate(['A','B','C'],2):#最后一个参数,设置下标初始值
-# 	print(k,v)
+#   print(k,v)
 # k=[x*x for x in range(1,11)]
 # print(k)
 # l=[m+n for m in 'ABC' for n in 'XYX']
@@ -60,14 +60,14 @@ def checktype(value, typ):
 
 # 函数斐波那契数列
 # def fb(max):
-# 	n,a,b=0,0,1
-# 	sl=[]
-# 	while n<max:
-# 		sl.append(b)
-# 		yield b
-# 		a,b=b,a+b
-# 		n=n+1
-# 	return sl
+#   n,a,b=0,0,1
+#   sl=[]
+#   while n<max:
+#       sl.append(b)
+#       yield b
+#       a,b=b,a+b
+#       n=n+1
+#   return sl
 # #输出
 # g=fb(6)
 # while True:
@@ -154,28 +154,28 @@ tmp = list(map(up, ['zAx', 'XXX', 'CzA']))
 def cj(x, y):
     return x * y
 from functools import reduce
-# s=reduce(cj,[1,4,5,6,7,8,9])
-# print(s)
+s = reduce(cj, [1, 4, 5, 6, 7, 8, 9])
+print(s)
 
 # 字符转浮点数
 # def str2float(str):
-# 	def add(x,y):
-# 		return x+y
-# 	n = str.index('.')
-# 	l=str.split('.')
-# 	if n==0:
-# 		l[0]=0
-# 		cd=len(l[1])
-# 		tmp=list(map(int,l))
-# 		tmp[1]=tmp[1]/(10**cd)
-# 		return reduce(add,tmp)
-# 	elif n==len(str)-1:
-# 		return int(l[0])
-# 	elif len(l)==2:
-# 		cd=len(l[1])
-# 		tmp=list(map(int,l))
-# 		tmp[1]=tmp[1]/(10**cd)
-# 		return reduce(add,tmp)
+#   def add(x,y):
+#       return x+y
+#   n = str.index('.')
+#   l=str.split('.')
+#   if n==0:
+#       l[0]=0
+#       cd=len(l[1])
+#       tmp=list(map(int,l))
+#       tmp[1]=tmp[1]/(10**cd)
+#       return reduce(add,tmp)
+#   elif n==len(str)-1:
+#       return int(l[0])
+#   elif len(l)==2:
+#       cd=len(l[1])
+#       tmp=list(map(int,l))
+#       tmp[1]=tmp[1]/(10**cd)
+#       return reduce(add,tmp)
 # x=str2float('1.1')
 # x=x*1.1
 # print(x)
@@ -185,39 +185,39 @@ from functools import reduce
 # filter 筛选函数(删掉返回未false的数值)(需要两个参数,一个为判断函数,一个为一个list)
 # #
 # def is_two(n):
-# 	return n%2==1
+#   return n%2==1
 # #删掉返回false的
 # x=list(filter(is_two,[1,2,3,4,5,6,7,8,9,11,12]))
 # print(x)
 
 # 筛选素数
 # def make_list():
-# 	n=1
-# 	while True:
-# 		n=n+2
-# 		yield n
+#   n=1
+#   while True:
+#       n=n+2
+#       yield n
 # def filter_ss(n):
-# 	return lambda x:x%n>0
+#   return lambda x:x%n>0
 # def primes():
-# 	yield 2
-# 	it=make_list()
-# 	while True:
-# 		n=next(it)
-# 		yield n
-# 		it=filter(filter_ss(n),it)
+#   yield 2
+#   it=make_list()
+#   while True:
+#       n=next(it)
+#       yield n
+#       it=filter(filter_ss(n),it)
 # for n in primes():
-# 	if n<1000:
-# 		print(n)
-# 	else:
-# 		break
+#   if n<1000:
+#       print(n)
+#   else:
+#       break
 
 # 回数:把数字翻转再比对相等即可判断是否为回数
 # def filter_hs(n):
-# 	n1=list(str(n))
-# 	n2=list(str(n))
-# 	n1.reverse()
-# 	if n2==n1:
-# 		return True
+#   n1=list(str(n))
+#   n2=list(str(n))
+#   n1.reverse()
+#   if n2==n1:
+#       return True
 # output = list(filter(filter_hs, range(1, 10000)))
 # print(output)
 
@@ -230,15 +230,15 @@ from functools import reduce
 # print(l)
 
 # def by_name(x):
-# 	l=[]
-# 	#将原有数列的数值一个个的传过去,而不是整个数列传过去,所以原有数列是二维的话,在内部处理就变成处理一维的
-# 	l.append(x[0])
-# 	return l
+#   l=[]
+#   #将原有数列的数值一个个的传过去,而不是整个数列传过去,所以原有数列是二维的话,在内部处理就变成处理一维的
+#   l.append(x[0])
+#   return l
 
 # def by_socre(x):
-# 	l=[]
-# 	l.append(x[1])
-# 	return l
+#   l=[]
+#   l.append(x[1])
+#   return l
 # L = [('Bob', 75), ('Adam', 92), ('Bart', 66), ('Lisa', 88)]
 # l=sorted(L,key=by_name)
 # print(l)
@@ -247,14 +247,14 @@ from functools import reduce
 
 # 将函数作为返回值
 # def count():
-# 	def f(j):
-# 		def g():
-# 			return j*j
-# 		return g
-# 	fs=[]
-# 	for i in range(1,5):
-# 		fs.append(f(i))
-# 	return fs
+#   def f(j):
+#       def g():
+#           return j*j
+#       return g
+#   fs=[]
+#   for i in range(1,5):
+#       fs.append(f(i))
+#   return fs
 
 # f1,f2,f3,f4=count()
 # print(f1())
@@ -269,7 +269,7 @@ from functools import reduce
 #
 #
 # def now():
-# 	print('2016-08-04')
+#   print('2016-08-04')
 # f=now
 # f()
 # print(f.__name__)
@@ -277,40 +277,40 @@ from functools import reduce
 
 # 装饰器
 # def log(func):
-# 	def wraper(*args,**kw):
-# 		print('call %s():'% func.__name__)
-# 		return func(*args,**kw)
-# 	return wraper
+#   def wraper(*args,**kw):
+#       print('call %s():'% func.__name__)
+#       return func(*args,**kw)
+#   return wraper
 # @log
 # def now():
-# 	print('20160804')
+#   print('20160804')
 # now()
 # now=log(now)
 # now()
 
 # def log(text):
-# 	def decorator(func):
-# 		def wrapper(*a,**k):
-# 			print('%s %s():'%(text,func.__name__))
-# 			return func(*a,**k)
-# 		return wrapper
-# 	return decorator
+#   def decorator(func):
+#       def wrapper(*a,**k):
+#           print('%s %s():'%(text,func.__name__))
+#           return func(*a,**k)
+#       return wrapper
+#   return decorator
 # @log('execute')
 # def nows():
-# 	print('123456789')
+#   print('123456789')
 # nows()
 # print(nows.__name__)
 
 # import functools
 # def log(func):
-# 	@functools.wraps(func)
-# 	def wrapper(*a,**k):
-# 		print('call %s():' %func.__name__)
-# 		return func(*a,**k)
-# 	return wrapper
+#   @functools.wraps(func)
+#   def wrapper(*a,**k):
+#       print('call %s():' %func.__name__)
+#       return func(*a,**k)
+#   return wrapper
 # @log
 # def now():
-# 	print('123')
+#   print('123')
 # now()
 # print(now.__name__)
 #
@@ -320,11 +320,11 @@ from functools import reduce
 # int2=functools.partial(int,base=2)
 # print(int2('100100'))
 # def int3(x,base=2):
-# 	return int(x,base)
+#   return int(x,base)
 # print(int3('1111'))
 # 测试自己的想法
 # def test(x,y,z):
-# 	return x*y*z
+#   return x*y*z
 # test1=functools.partial(test,y=3,z=4)
 # print(test1(2))
 #
@@ -350,11 +350,11 @@ from functools import reduce
 # sys.path.append('D:\Git\python')
 # print(sys.path)
 # class Student(object):
-# 	def __init__(self,name,score):
-# 		self.name=name
-# 		self.score=score
-# 	def print_score(self):
-# 		print('%s:%s' %(self.name,self.score))
+#   def __init__(self,name,score):
+#       self.name=name
+#       self.score=score
+#   def print_score(self):
+#       print('%s:%s' %(self.name,self.score))
 # A=Student('As',100)
 # B=Student('B',99)
 # A.print_score()
@@ -367,17 +367,17 @@ from functools import reduce
 # 变量加上__代表变量私有,只能在本类中访问,对象不能访问,在类外不能通过直接赋值修改属性值
 # 修改属性可以通过在类中定义相关方法来进行修改
 # class Student1(object):
-# 	def __init__(self,name,score):
-# 		self.__name=name
-# 		self.__score=score
-# 	def print_score(self):
-# 		print('%s:%s' %(self.__name,self.__score))
-# 	def getname(self):
-# 		return self.__name
-# 	def getscore(self):
-# 		return self.__score
-# 	def setname(self,name):
-# 		self.__name=name
+#   def __init__(self,name,score):
+#       self.__name=name
+#       self.__score=score
+#   def print_score(self):
+#       print('%s:%s' %(self.__name,self.__score))
+#   def getname(self):
+#       return self.__name
+#   def getscore(self):
+#       return self.__score
+#   def setname(self,name):
+#       self.__name=name
 # A1=Student1('A','90')
 # A1.__name="ZXCB"#无效
 # print(A1.getname())
@@ -415,7 +415,7 @@ C = Cat()
 # C.run()
 # C.eat()
 # def run_t(tmp):
-# 	tmp.run()
+#   tmp.run()
 # run_t(Animal())
 # run_t(Dog())
 # run_t(Cat())
@@ -428,11 +428,11 @@ C = Cat()
 #
 # 情形2
 # class Dog(Animal):
-# 	def run(self):
-# 		print('Dog running')
+#   def run(self):
+#       print('Dog running')
 # class Cat(Animal):
-# 	def run(self):
-# 		print('Cat running')
+#   def run(self):
+#       print('Cat running')
 #
 
 
@@ -471,9 +471,9 @@ def run_t(tmp):
 #
 #
 # class Student(object):
-# 	name="Student"
-# 	def __init__(self,name):
-# 		self.name=name
+#   name="Student"
+#   def __init__(self,name):
+#       self.name=name
 # s=Student('bob')
 
 # print(s.name)
@@ -482,12 +482,12 @@ def run_t(tmp):
 # #Student
 
 # class Word(object):
-# 	def __init__(self,text):
-# 		self.text=text
-# 	def equal(self,word1):
-# 		return self.text.lower()==word1.text.lower()
-# 	def equal1(self,word2):
-# 		return self.text.lower()==word2.lower()
+#   def __init__(self,text):
+#       self.text=text
+#   def equal(self,word1):
+#       return self.text.lower()==word1.text.lower()
+#   def equal1(self,word2):
+#       return self.text.lower()==word2.lower()
 # w=Word('qwert')
 # x=w.equal(Word('Qwert'))
 # print(x)
@@ -498,7 +498,7 @@ def run_t(tmp):
 #
 #  #类的方法绑定,可以在使用时实时添加类所缺少的方法,这个类的所有的对象都能使用
 # class Student(object):
-# 	pass
+#   pass
 # s=Student()
 # #给对象绑定属性,这个属性
 # s.name="zl"
@@ -506,7 +506,7 @@ def run_t(tmp):
 
 
 # def set_age(self,age):
-# 	self.age=age
+#   self.age=age
 # from types import MethodType
 # #给对象绑定方法,这个方法只能这个对象使用,不是这个类的方法
 # s.set_age=MethodType(set_age,s)
@@ -514,18 +514,18 @@ def run_t(tmp):
 # #print(s.age)
 # #给类绑定属性,类与对象都可以使用,包括后面绑定的方法
 # def set_score(self,score):
-# 	self.score=score
+#   self.score=score
 # Student.set_score=set_score
 # s.set_score(1000)
 # #print(s.score)
 
 # def get_score(self):
-# 	print(self.score)
+#   print(self.score)
 # Student.get_score=get_score
 # s.get_score()
 
 # class Student(object):
-# 	__slots__=('name','age')
+#   __slots__=('name','age')
 
 # # s.name="zl"
 # # print(s.name)
@@ -534,15 +534,15 @@ def run_t(tmp):
 # # s.score=100
 # # print(s.score)
 # class Student(object):
-# 	def get_score(self):
-# 		print(self._score)
+#   def get_score(self):
+#       print(self._score)
 
-# 	def set_score(self,score):
-# 		if not isinstance(score,int):
-# 			raise ValueError('not int')
-# 		if score<0 or score>100:
-# 			raise ValueError('not 1~100')
-# 		self._score=score
+#   def set_score(self,score):
+#       if not isinstance(score,int):
+#           raise ValueError('not int')
+#       if score<0 or score>100:
+#           raise ValueError('not 1~100')
+#       self._score=score
 # s=Student()
 # # s.set_score('qwe')
 # # #ValueError: not int
@@ -554,23 +554,23 @@ def run_t(tmp):
 #
 # #将类方法当做属性来调用
 # class Student(object):
-# 	@property
-# 	def score(self):
-# 		print(self._score)
-# 	@score.setter
-# 	def score(self,score):
-# 		if not isinstance(score,int):
-# 			raise ValueError('not int')
-# 		if score<0 or score>100:
-# 			raise ValueError('not 1~100')
-# 		self._score=score
-# 	@property
-# 	def values(self):
-# 		print('%s:%s'%(self.name,self.age))
-# 	@values.setter
-# 	def values(self,va):
-# 		self.name=va[0]
-# 		self.age=va[1]
+#   @property
+#   def score(self):
+#       print(self._score)
+#   @score.setter
+#   def score(self,score):
+#       if not isinstance(score,int):
+#           raise ValueError('not int')
+#       if score<0 or score>100:
+#           raise ValueError('not 1~100')
+#       self._score=score
+#   @property
+#   def values(self):
+#       print('%s:%s'%(self.name,self.age))
+#   @values.setter
+#   def values(self,va):
+#       self.name=va[0]
+#       self.age=va[1]
 # s=Student()
 # # s.score=99#等于调用了 set_score(self,score):
 # # s.score#等于get_score(self):
@@ -587,21 +587,21 @@ def run_t(tmp):
 #
 # #多继承学习
 # class Animal(object):
-# 	pass
+#   pass
 
 # class Mammal(Animal):
-# 	pass
+#   pass
 # class Bird(Animal):
-# 	pass
+#   pass
 
 # class Run(object):
-# 	def run(self):
-# 		print('Running')
+#   def run(self):
+#       print('Running')
 # class Fly(object):
-# 	def fly(self):
-# 		print('Flying')
+#   def fly(self):
+#       print('Flying')
 # #多继承
 # class Dog(Mammal,Run):
-# 	pass
+#   pass
 # d=Dog()
 # d.run()
