@@ -8,7 +8,7 @@
 #     print('I am child process (%s) and my parent is %s.' % (os.getpid(), os.getppid()))
 # else:
 #     print('I (%s) just created a child process (%s).' % (os.getpid(), pid))
-#多进程实例
+# 多进程实例
 #  from multiprocessing import Process
 # import os
 # def run_proc(name):
@@ -19,27 +19,31 @@
 #     p.start()
 #     p.join()
 #     print('Child process end')
-#     
+#
 # D:\Git\python>more.py
 # Parent process 6752.
 # Run child process test(7444)...
 # Child process end
 
-#多进程实例
+# 多进程实例
 from multiprocessing import Pool
-import os,time,random
-def long_time_task(name):
-    print('Run task %s (%s)...'%(name,os.getpid()))
-    start=time.time()
-    time.sleep(random.random()*3)
-    end=time.time()
-    print('Task %s runs %0.2f seconds'%(name,(end-start)))
+import os
+import time
+import random
 
-if __name__=='__main__':
-    print('Parent process %s'%os.getpid())
-    p=Pool(8)
+
+def long_time_task(name):
+    print('Run task %s (%s)...' % (name, os.getpid()))
+    start = time.time()
+    time.sleep(random.random()*3)
+    end = time.time()
+    print('Task %s runs %0.2f seconds' % (name, (end-start)))
+
+if __name__ == '__main__':
+    print('Parent process %s' % os.getpid())
+    p = Pool(8)
     for i in range(9):
-        p.apply_async(long_time_task,args=(i,))
+        p.apply_async(long_time_task, args=(i,))
     print('Waiting for all subprocesses done...')
     p.close()
     p.join()
