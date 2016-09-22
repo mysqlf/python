@@ -25,32 +25,7 @@
 # Run child process test(7444)...
 # Child process end
 
-<<<<<<< HEAD
 # 多进程实例
-from multiprocessing import Pool
-import os
-import time
-import random
-
-
-def long_time_task(name):
-    print('Run task %s (%s)...' % (name, os.getpid()))
-    start = time.time()
-    time.sleep(random.random()*3)
-    end = time.time()
-    print('Task %s runs %0.2f seconds' % (name, (end-start)))
-
-if __name__ == '__main__':
-    print('Parent process %s' % os.getpid())
-    p = Pool(8)
-    for i in range(9):
-        p.apply_async(long_time_task, args=(i,))
-    print('Waiting for all subprocesses done...')
-    p.close()
-    p.join()
-    print('All subprocesses done')
-=======
-#多进程实例
 # from multiprocessing import Pool
 # import os,time,random
 # def long_time_task(name):
@@ -69,7 +44,6 @@ if __name__ == '__main__':
 #     p.close()
 #     p.join()
 #     print('All subprocesses done')
->>>>>>> 78580ebca7f65d826929a3da990f0440aab6f296
 
 # D:\Git\python>more.py
 # Parent process 7324
@@ -85,8 +59,6 @@ if __name__ == '__main__':
 # Task 1 runs 1.58 seconds
 # Task 3 runs 2.82 seconds
 # All subprocesses done
-<<<<<<< HEAD
-=======
 #
 # import subprocess
 # print('$ nslookup www.python.org')
@@ -105,10 +77,11 @@ if __name__ == '__main__':
 
 # Exit code : 0
 
-# import subprocess
-# print('$ nslookup')
-# p=subprocess.Popen(['nslookup'],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
-# output, err = p.communicate(b'set q=mx\npython.org\nexit\n')#这一段将作为输入参数传入函数内,实际使用可使用获取输入传递方式
-# print(output.decode('latin-1').encode('utf-8'))
-# print('Exit code:',p.returncode)
->>>>>>> 78580ebca7f65d826929a3da990f0440aab6f296
+import subprocess
+print('$ nslookup')
+p = subprocess.Popen(['nslookup'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+output, err = p.communicate(b'set q=mx\npython.org\nexit\n')
+print(output.decode('ascii'))
+exit()
+print(output.decode('latin-1').encode("utf-8"))
+print('Exit code:', p.returncode)

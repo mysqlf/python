@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# 
-from functionstudy import myabs
+#
+# from functionstudy import myabs
 # a=100
 # if a>=0:
 # 	print(a)
@@ -39,7 +39,7 @@ from functionstudy import myabs
 # print(chr(25991))
 # print(chr(89))
 # print('\u4e2d\u6587')
-# 
+#
 # print('ABC'.encode('ascii'))
 # print('中文'.encode('utf-8'))
 # print(b'\xe4\xb8\xad\xe6\x96\x87'.decode('utf-8'))
@@ -57,7 +57,7 @@ from functionstudy import myabs
 # s2=85
 # r=(s2-s1)/s1
 # print('%f' % r)
-# 
+#
 # classmate=['Michael','Bob','Tracy']
 # print(classmate)
 # x=len(classmate)
@@ -91,8 +91,7 @@ from functionstudy import myabs
 #     ['Adam', 'Bart', 'Lisa']
 # ]
 # print(L[1][1])
-# 
-
+#
 
 
 # python 字典基本操作
@@ -106,7 +105,7 @@ from functionstudy import myabs
 # print(d.get('D',-1))#获取已经存在的值如果值不存在就给不存在的key直接赋值
 # d.pop('A')#删除
 # print(d)
-# 
+#
 
 # #python set #用于做数学的交并运算
 # s=set([1,2,3,4,5])
@@ -119,9 +118,9 @@ from functionstudy import myabs
 # print(se)
 # st=s|t
 # print(st)
-# 
- 
-#python 字符串变化行为
+#
+
+# python 字符串变化行为
 # s=['a','c','b']
 # s.sort()
 # print(s)
@@ -129,12 +128,12 @@ from functionstudy import myabs
 # b=a.replace('a','B')
 # print(a)
 # print(b)
-# 
+#
 
-#python字典与set的比较
+# python字典与set的比较
 
 # d={'s':1,'e':2,'t':3}
-# i={'s':1,'e':[2,3]}#字典的值是可以改变的 
+# i={'s':1,'e':[2,3]}#字典的值是可以改变的
 # i['e']=4
 # t={'1':'s','[2,3]':'e'}#key永远都是字符串,字符串是不会变的
 
@@ -146,13 +145,13 @@ from functionstudy import myabs
 # #e=set([1,[2,3]])#无法放入,因为[2,3]是可变的,通过一些方法这个list对象会改变
 # print(s)
 # #print(e)
-# 
+#
 
 # print(hex(120))
 # print(bool(1))
 # print(bool(2))
 # print(bool(''))
-# 
+#
 
 # x=myabs(6)
 # print(x)
@@ -171,6 +170,6 @@ r.hset()
 # print(r.keys())
 
 
-#管道操作
+# 管道操作
 # p=r.pipeline()
 # p.set('hello','redis').sadd('fax','bax').incr('num').execute()

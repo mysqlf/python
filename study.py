@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# 
+#
 # import types
 # def my_love(self,girl):
 #     print('%s love %s'%(self.name,girl))
@@ -10,7 +10,7 @@
 # Me.my_love=my_love
 # zl=Me('zl')
 # zl.my_love('who')
-# 
+#
 # class Me(object):
 #     @property
 #     def love(self):
@@ -21,30 +21,37 @@
 # m=Me()
 # m.love='zc'
 # m.love
-    
+
+
 class Student(object):
-    def __init__(self,name):
-        self._name=name
+
+    def __init__(self, name):
+        self._name = name
+
     def __str__(self):
-        return 'Student object (name :%s)'%self._name
-    __repr__=__str__
+        return 'Student object (name :%s)' % self._name
+    __repr__ = __str__
 # print(Student('ZL'))
 # s=Student('ZL')
 # print(s)
 
+
 class Fib(object):
+
     def __init__(self):
-        self.a,self.b=0,1
+        self.a, self.b = 0, 1
+
     def __iter__(self):
         return self
+
     def __next__(self):
-        self.a,self.b=self.b,self.a+self.b
-        if self.a>1000:
-            raise StopIteration();
+        self.a, self.b = self.b, self.a + self.b
+        if self.a > 1000:
+            raise StopIteration()
         return self.a
 # for n in Fib():
 #     print(n)
-#     
+#
 #     定制一个产生斐波那契数列的类
 # class Fibs(object):
 #     def __getitem__(self,n):
@@ -76,48 +83,55 @@ class Fib(object):
 #             return L
 # f=Fib3()
 # print(f[98:100])
-# 
+#
 # __getattr__
+
+
 class Student(object):
-    def __init__(self,path=''):#初始化类的属性
-        self._path=path
-    def __getattr__(self,path):#调用不存在的类方法时返回
+
+    def __init__(self, path=''):  # 初始化类的属性
+        self._path = path
+
+    def __getattr__(self, path):  # 调用不存在的类方法时返回
         return Student('%s/%s' % (self._path, path))
-    def __str__(self):#这用来返回字符串
+
+    def __str__(self):  # 这用来返回字符串
         return self._path
-    __repr__=__str__
-    def __call__(self,path):#调用自己的方法或属性
+    __repr__ = __str__
+
+    def __call__(self, path):  # 调用自己的方法或属性
         return Student('%s/%s' % (self._path, path))
 
-#print(Student().user('zl').up)
-#流程Student()实例化一个类
-#Student().user('')
+# print(Student().user('zl').up)
+# 流程Student()实例化一个类
+# Student().user('')
 
-from enum import Enum,unique
+from enum import Enum, unique
 
-Month=Enum('Month',('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'))
-#for name, member in Month.__members__.items():
+Month = Enum('Month', ('Jan', 'Feb', 'Mar', 'Apr', 'May',
+                       'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'))
+# for name, member in Month.__members__.items():
 #    print(name,'=>',member,',',member.value)#value属性则是自动赋给成员的int常量，默认从1开始计数。
-    
-    
-@unique # @unique装饰器可以帮助我们检查保证没有重复值。
+
+
+@unique  # @unique装饰器可以帮助我们检查保证没有重复值。
 class Week(Enum):
-    Sun=0
-    Mon=1
-    Tue=2
-    Wed=3
-    Thu=4
-    Fri=5
-    Sat=6
+    Sun = 0
+    Mon = 1
+    Tue = 2
+    Wed = 3
+    Thu = 4
+    Fri = 5
+    Sat = 6
 
 # day1=Week.Mon
 # print(day1)
 # day1=Week.Mon.value
 # print(day1)
-#for name,member in Week.__members__.items():
+# for name,member in Week.__members__.items():
 #    print(name,'=>',member,',',member.value)
 #    既可以用成员名称引用枚举常量，又可以直接根据value的值获得枚举常量。
-#print(Week(1))
+# print(Week(1))
 
 # for x in range(1,30):
 #     print(Week(x%7))
@@ -141,7 +155,7 @@ class Week(Enum):
 # print(type(h))
 # #<class '__main__.Hello'>
 # #
-# 
+#
 # class ListMetaclass(type):
 #     def __new__(cls,name,bases,attrs):
 #         attrs['add']=lambda self,value:self.append(value)
@@ -160,7 +174,7 @@ class Week(Enum):
 # print(l)
 # l.d(0)
 # print(l)
-# 
+#
 # class Field(object):
 #     def __init__(self,name,column_type):
 #         self.name=name
@@ -215,7 +229,6 @@ class Week(Enum):
 #     name=StringField('username')
 #     email=StringField('email')
 #     password=StringField('password')
-
 
 
 # u=User(id=12345,name='zl',email='zl@zl.com',password='123456')
