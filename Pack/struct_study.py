@@ -14,3 +14,4 @@ x = struct.pack('>I', 10240099)
 # >表示字节顺序是big-endian，也就是网络序，I表示4字节无符号整数。
 print(x)
 print(struct.unpack('>IH', b'\xf0\xf0\xf0\xf0\x80\x80'))
+print(struct.unpack('>IH', b'\xf0\xf0\xf0\xf0\x00\x9c'))
