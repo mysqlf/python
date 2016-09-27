@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+# 图片操作
 # from PIL import Image
 # # 打开当前路径一张图片
 # im = Image.open('test.jpg')
