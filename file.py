@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import os
-# f=open('D:/Git/python/test.txt','r')
-# #print(f)
+f = open('D:/Git/python/test.txt', 'r')
+# print(f)
 # x=f.read()
 # print(x)
 # f.close()
@@ -115,34 +115,34 @@ import os
 # d=pickle.load(f)#反序列化
 # f.close()
 # print(d)
-import json
-# d=dict(name='A',age=18,score=88)
-# x=json.dumps(d)
-# print(x)
-# print(json.loads(x))
+# import json
+# # d=dict(name='A',age=18,score=88)
+# # x=json.dumps(d)
+# # print(x)
+# # print(json.loads(x))
 
 
-class Student(object):
+# class Student(object):
 
-    def __init__(self, name, age, score):
-        self.name = name
-        self.age = age
-        self.score = score
+#     def __init__(self, name, age, score):
+#         self.name = name
+#         self.age = age
+#         self.score = score
 
-    def student2Dict(self):
-        return {
-            'name': self.name,
-            'age': self.age,
-            'score': self.score
-        }
+#     def student2Dict(self):
+#         return {
+#             'name': self.name,
+#             'age': self.age,
+#             'score': self.score
+#         }
 
-    def dict2Student(self, objdict):
-        return Student(objdict['name'], objdict['age'], objdict['score'])
-s = Student('K', 12, 99)
-k = s.__dict__
-# 因为通常class的实例都有一个__dict__属性，它就是一个dict，用来存储实例变量。也有少数例外，比如定义了__slots__的class
-# print(json.dumps(s.__dict__))
-# 将json字符串转为对象
-# 第一个参数是该对象实例转化的json字符串,第二个参数是通过字典实例化对象的函数
-print(json.loads(json.dumps(s.student2Dict()), object_hook=s.dict2Student))
-# <__main__.Student object at 0x0000000001131710>
+#     def dict2Student(self, objdict):
+#         return Student(objdict['name'], objdict['age'], objdict['score'])
+# s = Student('K', 12, 99)
+# k = s.__dict__
+# # 因为通常class的实例都有一个__dict__属性，它就是一个dict，用来存储实例变量。也有少数例外，比如定义了__slots__的class
+# # print(json.dumps(s.__dict__))
+# # 将json字符串转为对象
+# # 第一个参数是该对象实例转化的json字符串,第二个参数是通过字典实例化对象的函数
+# print(json.loads(json.dumps(s.student2Dict()), object_hook=s.dict2Student))
+# # <__main__.Student object at 0x0000000001131710>
