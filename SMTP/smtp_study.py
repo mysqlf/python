@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-#import os
+
 
 from email.mime.text import MIMEText  # , MIMEMultipart
 from email import encoders
