@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # sqllite
-import sqlite3
+# import sqlite3
 # 连接到sqlite
 # 数据库文件test.db@不存在会自动创建
 

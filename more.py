@@ -25,7 +25,6 @@
 # Run child process test(7444)...
 # Child process end
 
-<<<<<<< HEAD
 # 多进程实例
 from multiprocessing import Pool
 import os
@@ -49,8 +48,8 @@ if __name__ == '__main__':
     p.close()
     p.join()
     print('All subprocesses done')
-=======
-#多进程实例
+
+# 多进程实例
 # from multiprocessing import Pool
 # import os,time,random
 # def long_time_task(name):
@@ -69,7 +68,6 @@ if __name__ == '__main__':
 #     p.close()
 #     p.join()
 #     print('All subprocesses done')
->>>>>>> 78580ebca7f65d826929a3da990f0440aab6f296
 
 # D:\Git\python>more.py
 # Parent process 7324
@@ -85,8 +83,7 @@ if __name__ == '__main__':
 # Task 1 runs 1.58 seconds
 # Task 3 runs 2.82 seconds
 # All subprocesses done
-<<<<<<< HEAD
-=======
+
 #
 # import subprocess
 # print('$ nslookup www.python.org')
@@ -111,4 +108,3 @@ if __name__ == '__main__':
 # output, err = p.communicate(b'set q=mx\npython.org\nexit\n')#这一段将作为输入参数传入函数内,实际使用可使用获取输入传递方式
 # print(output.decode('latin-1').encode('utf-8'))
 # print('Exit code:',p.returncode)
->>>>>>> 78580ebca7f65d826929a3da990f0440aab6f296

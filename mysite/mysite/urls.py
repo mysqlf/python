@@ -19,5 +19,5 @@ from mysite.view import hello
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^hello/$',hello),
+    url(r'^hello/$', hello),
 ]
