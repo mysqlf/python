@@ -52,3 +52,5 @@ for i in range(10):
 # 关闭:
 manager.shutdown()
 print('master exit.')
+if __name__ == '__main__':
+    freeze_support()
