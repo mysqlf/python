@@ -3,6 +3,8 @@
 
 import tablib
 
+# 号码段组合尾数
+
 
 def addzero(num, tel):
     tmp = str(num)
@@ -10,14 +12,11 @@ def addzero(num, tel):
         tmp = '0'+tmp
     tel = tel+tmp
     return tel
-telhead = []
-with open('test.txt') as f:
-    for x in range(1, 500):
-        q = f.readline(7)
-        if q != '':
-            telhead.append(q)
-# for x in range(0, 10000):
-#     tel.append((addzero(x, '1511263'), '1'))
+
+
+# print(telhead)
+
+# 一个号码段生成1W号码并写入文件
 
 
 def maketel(tel, head):
@@ -27,12 +26,28 @@ def maketel(tel, head):
     phone = tablib.Dataset(*phone, headers=head)
     with open(str(x)+'.xlsx', 'wb') as f:
         f.write(phone.export('xlsx'))
-head = ('tel', 'check')
-for x in telhead:
-    maketel(x, head)
+# 打开文件读取号码段
+# telhead = []
+# with open('test.txt') as f:
+#     for x in range(1, 500):
+#         q = f.readline(7)
+#         if q != '':
+#             telhead.append(q)
+# print(telhead)
+#
+# 读取号码的另一种写法
+from functools import partial
+telhead = []
+with open('test.txt') as f:
+    for tel in iter(partial(f.read, 7), ''):
+        telhead.append(tel)
 
-    # print(l)
-    # l = [('151'), ('165')]
+# head = ('tel', 'check')
+# for x in telhead:
+#     maketel(x, head)
+
+# print(l)
+# l = [('151'), ('165')]
 
 
 # print(tel[:2])
