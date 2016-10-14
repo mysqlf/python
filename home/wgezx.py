@@ -33,6 +33,6 @@ def portScanner(host, port):
 def main():
     setdefaulttimeout(1)
     for p in range(1, 1024):
-        portScanner('192.168.0.1', p)
+        portScanner('127.0.0.1', p)
 if __name__ == '__main__':
     main()
