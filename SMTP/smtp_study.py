@@ -18,7 +18,7 @@ def _format_addr(s):
 
 # 输入邮箱账号密码
 from_addr = '1154505909@qq.com'  # input('From:')
-password = 'ihktpbrqhppzbaab'  # input('password:')
+password = ''  # input('password:')
 to_addr = 'z1154505909@163.com'  # input('To:')
 smtp_service = 'smtp.qq.com'  # input('SMTP service:')
 
