@@ -1,7 +1,8 @@
 
 
 # encoding=utf8
-import requests
+#import requests
+from urllib import request
 from bs4 import BeautifulSoup
 import re
 import time
@@ -21,7 +22,7 @@ Default_Header = {
 
 BASE_URL = 'http://music.163.com'
 
-_session = requests.session()
+_session = request.session()
 _session.headers.update(Default_Header)
 
 
@@ -30,7 +31,7 @@ def getPage(pageIndex):
     soup = BeautifulSoup(_session.get(pageUrl).content)
     songList = soup.findAll('a', attrs={'class': 'tit f-thide s-fc0'})
     for i in songList:
-        print i['href']
+        print(i['href'])
         getPlayList(i['href'])
 
 
@@ -70,7 +71,7 @@ def createSecretKey(size):
 def readEver(songId):
     url = 'http://music.163.com/weapi/v1/resource/comments/R_SO_4_' + str(songId) + '/?csrf_token='
     headers = {'Cookie': 'appver=1.5.0.75771;', 'Referer': 'http://music.163.com/'}
-    text = {'username': '', 'password': '', 'rememberLogin': 'true'}
+    text = {'username': 'z1154505909@163.com', 'password': '520zuochao', 'rememberLogin': 'true'}
     modulus = '00e0b509f6259df8642dbc35662901477df22677ec152b5ff68ace615bb7b725152b3ab17a876aea8a5aa76d2e417629ec4ee341f56135fccf695280104e0312ecbda92557c93870114af6c9d05c4f7f0c3685b7a46bee255932575cce10b424d813cfe4875d3e82047b97ddef52741d546b8e289dc6935b3ece0462db0a22b8e7'
     nonce = '0CoJUm6Qyw8W8jud'
     pubKey = '010001'
@@ -79,10 +80,10 @@ def readEver(songId):
     encText = aesEncrypt(aesEncrypt(text, nonce), secKey)
     encSecKey = rsaEncrypt(secKey, pubKey, modulus)
     data = {'params': encText, 'encSecKey': encSecKey}
-    req = requests.post(url, headers=headers, data=data)
+    req = request.post(url, headers=headers, data=data)
     total = req.json()['total']
     if int(total) > 10000:
-        print songId, total
+        print(songId, total)
     else:
         pass
 
