@@ -27,12 +27,13 @@ def portScanner(host, port):
         print('[+]%d open ' % port)
         s.close()
     except:
-        print('[-]%d close' % port)
+        pass
+        #print('[-]%d close' % port)
 
 
 def main():
     setdefaulttimeout(1)
     for p in range(1, 1024):
-        portScanner('127.0.0.1', p)
+        portScanner('192.168.10.101', p)
 if __name__ == '__main__':
     main()
