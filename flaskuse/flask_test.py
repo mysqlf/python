@@ -20,22 +20,29 @@ class FlaskrTestCase(unittest.TestCase):
 
     def test_empty_db(self):
         rv = self.app.get('/')
-        assert 'No enteries here so far 'in rv.data
+        assert 'No enteries here so far'.encode('utf-8') in rv.data
 
     def login(self, username, password):
-        return self.app.post('/login', data=dict(username=username, password=password), follow_redirects=True)
+        return self.app.post('/login', data=dict(username=username, password=password), follow_redirects=True)  # , follow_redirects=True
 
     def logout(self):
-        return self.app.get('logout', follow_redirects=True)
+        return self.app.get('/logout', follow_redirects=True)
 
     def test_login_logout(self):
         rv = self.login('admin', 'default')
-        assert 'Your were logged in ' in rv.data
+        assert 'You were logged in'.encode('utf-8') in rv.data
         rv = self.logout()
-        assert 'Your were loggrd out' in rv.data
+        assert 'You were loggrd out'.encode('utf-8') in rv.data
         rv = self.login('adminx', 'default')
-        assert 'Username error' in rv.data
+        assert 'Username error'.encode('utf-8') in rv.data
         rv = self.login('admin', 'defaultx')
-        assert 'Password error' in rv.data
+        assert 'Password error'.encode('utf-8') in rv.data
+
+    def test_messages(self):
+        self.login('admin', 'default')
+        rv = self.app.post('/add', data=dict(title='<hello>', text='<strong>HTML</strong>allowed here'), follow_redirects=True)  # follow_redirects=True
+        assert 'No enteries here so far'.encode('utf-8') not in rv.data
+        assert '&lt;hello &gt'.encode('utf-8') in rv.data
+        assert '<strong>HTML</strong>allowed here'.encode('utf-8') in rv.data
 if __name__ == '__main__':
     unittest.main()
