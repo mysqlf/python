@@ -23,7 +23,8 @@ class FlaskrTestCase(unittest.TestCase):
         assert 'No enteries here so far'.encode('utf-8') in rv.data
 
     def login(self, username, password):
-        return self.app.post('/login', data=dict(username=username, password=password), follow_redirects=True)  # , follow_redirects=True
+        # , follow_redirects=True
+        return self.app.post('/login', data=dict(username=username, password=password), follow_redirects=True)
 
     def logout(self):
         return self.app.get('/logout', follow_redirects=True)
@@ -40,7 +41,9 @@ class FlaskrTestCase(unittest.TestCase):
 
     def test_messages(self):
         self.login('admin', 'default')
-        rv = self.app.post('/add', data=dict(title='<hello>', text='<strong>HTML</strong>allowed here'), follow_redirects=True)  # follow_redirects=True
+        # follow_redirects=True
+        rv = self.app.post('/add', data=dict(title='<hello>',
+                                             text='<strong>HTML</strong>allowed here'), follow_redirects=True)
         assert 'No enteries here so far'.encode('utf-8') not in rv.data
         assert '&lt;hello &gt'.encode('utf-8') in rv.data
         assert '<strong>HTML</strong>allowed here'.encode('utf-8') in rv.data
