@@ -47,5 +47,7 @@ class FlaskrTestCase(unittest.TestCase):
         assert 'No enteries here so far'.encode('utf-8') not in rv.data
         assert '&lt;hello &gt'.encode('utf-8') in rv.data
         assert '<strong>HTML</strong>allowed here'.encode('utf-8') in rv.data
+
+
 if __name__ == '__main__':
     unittest.main()

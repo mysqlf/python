@@ -57,7 +57,7 @@ def upload():
     if request.method == 'POST':
         f = request.files['img']
         f.save('D:/youget/'+secure_filename(f.filename))
-        return '123'
+        return secure_filename(f.filename)
     else:
         return render_template('upload.html')
 
