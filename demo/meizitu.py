@@ -3,7 +3,7 @@
 import requests
 from bs4 import BeautifulSoup
 import os
-import io
+# import io
 import sys
 
 # sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf8')
@@ -63,8 +63,6 @@ import sys
 #             return False
 # Mzitu = meizi()  # 实例化
 # Mzitu.all_url('http://www.mzitu.com/all')  # 给函数all_url传入参数  你可以当作启动爬虫（就是入口）
-from bs4 import BeautifulSoup
-import os
 
 
 class mzitu():
@@ -79,8 +77,8 @@ class mzitu():
             # 我注意到有个标题带有 ？  这个符号Windows系统是不能创建文件夹的所以要替换掉
             path = str(title).replace("?", '_')
             # 调用mkdir函数创建文件夹！这儿path代表的是标题title哦！！！！！不要糊涂了哦！
-            self.mkdir(path)
-            os.chdir(path)
+            self.makdir(path)
+            os.chdir("D:\mzitu\\" + path)
             href = a['href']
             # 调用html函数把href参数传递过去！href是啥还记的吧？ 就是套图的地址哦！！不要迷糊了哦！
             self.html(href)
@@ -106,10 +104,11 @@ class mzitu():
         f.write(img.content)
         f.close()
 
-    def mkdir(self, path):  # 这个函数创建文件夹
+    def makdir(self, path):  # 这个函数创建文件夹
         path = path.strip()
         isExists = os.path.exists(os.path.join("D:\mzitu", path))
         if not isExists:
+            print(path)
             print(u'建了一个名字叫做', path, u'的文件夹！')
             os.makedirs(os.path.join("D:\mzitu", path))
             return True
