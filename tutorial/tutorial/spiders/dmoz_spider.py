@@ -6,21 +6,23 @@ import re
 
 class DmozSpider(Spider):
     name = "dmoz"
-    allowed_domains = ["dmoz.org"]
+    allowed_domains = ["12333sh.gov.cn"]
     start_urls = [
-        "http://djangobook.py3k.cn/2.0/chapter01/",
+        "http://www.12333sh.gov.cn/201412333/wsbs/bszn/index.shtml",
     ]
 
     def parse(self, response):
         sel = Selector(response)
-        sites = sel.xpath('//div[@class="section"]')
+        sites = sel.xpath('//div[@class="gfwjcontent"]')
         items = []
         for site in sites:
             item = DmozItem()
-            item['title'] = site.xpath('//p[@class="title"]').extract()
-            item['name'] = site.xpath('//p[@class="cn"]').extract()
+            item['name'] = site.xpath('//a/text()').extract()
             item['url'] = site.xpath('//a/@href').extract()
-            item['description'] = site.xpath(
-                '//ul/li/p[@class="first"]').extract()
+            #item['title'] = site.xpath('//p[@class="title"]').extract()
+            # item['name']= site.xpath('//p[@class="cn"]').extract()
+            # item['url'] = site.xpath('//a/@href').extract()
+            # item['description'] = site.xpath(
+            #     '//ul/li/p[@class="first"]').extract()
             items.append(item)
         return items
