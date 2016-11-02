@@ -111,7 +111,7 @@ class BDTB:
         contents = []
         for item in items:
             # 将文本进行去除标签处理，同时在前后加入换行符
-            content = "\n"+self.tool.replace(item)+"\n"
+            content = "\n" + self.tool.replace(item) + "\n"
             contents.append(content)
         return contents
 
@@ -151,7 +151,7 @@ class BDTB:
         #u = urllib.request.urlopen(imageURL)
         data = u.read()
         name, ext = os.path.splitext(imageURL)
-        fileName = str(imgPath+'.'+ext)
+        fileName = str(imgPath + '.' + ext)
         f = open(fileName, 'wb')
         f.write(data)
         f.close()
@@ -206,7 +206,7 @@ class BDTB:
             #         print ("正在复制图片" + str(fileName))
         # 出现写入异常
         except OSError as e:
-            print("写入异常，原因"+e.message)
+            print("写入异常，原因" + e.message)
         finally:
             print("写入任务完成")
 
