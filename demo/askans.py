@@ -31,6 +31,5 @@ class ask():
             start_page = self.total_num
         for x in range(1, start_page):
             print(self.getCurrentTime(), '正在抓取', start_page-x+1, '个页面')
-            try:
-                self.getQuestions(start_page-x+1)
-                Exception
+            # try:
+            #     self.getQuestions(start_page-x+1)
