@@ -18,8 +18,11 @@ from collections import defaultdict
 # for key, value in pairs:
 #     d[key].append(value)
 # print(d)
-d = defaultdict(list)
-with open('../otherfile/test.txt') as f:
+# #实现统计单词出现次数
+d = defaultdict(int)
+with open('../../otherfile/test.txt') as f:
     for line in f.readlines():
+        line = line.strip('\n')
         for key in line.split(' '):
-            print(key)
+            d[key] += 1
+print(d)
