@@ -79,3 +79,15 @@ print(value)
 
 a = {'x': 1, 'z': 3}
 b = {'y': 2, 'z': 4}
+c = {'x': 1, 'z': 1}
+mer = dict(b)
+# update会将数据整合在一起形成一个全新集合,
+# 并且后面写入的会覆盖前面的键值相同的数据
+# 页因为是新生成的数组，导致原数组的修改不会同步到这个数组里面来
+mer.update(a)
+print(mer)
+mer.update(c)
+print(mer)
+
+c['z'] = 100
+print(mer)
