@@ -29,14 +29,20 @@ print(tmp)
 comment = re.compile(r'/\*(.*?)\*/')
 
 text1 = '/* this is a comment */'
-text2 = '''/* this is a
+text2 = ''' /* this is a
 multiline comment */
 '''
 tmp = comment.findall(text1)
 print(tmp)
 tmp = comment.findall(text2)
 print(tmp)
-
+# 增加对换行的支持
 comment = re.compile(r'/\*((?:.|\n)*?\*/)')
+tmp = comment.findall(text2)
+print(tmp)
+
+# 第二个参数 re.DOTALL
+# 它可以让正则表达式中的点(.)匹配包括换行符在内的任意字符。
+comment = re.compile(r'(/\*(.*?)\*/)', re.DOTALL)
 tmp = comment.findall(text2)
 print(tmp)
