@@ -6,7 +6,7 @@
 #     return x**2
 # if __name__=='__main__':
 #     my_func()
-
+# /home/local/java/jdk1.8.0_112
 # 异常处理
 try:
     print('try...')
