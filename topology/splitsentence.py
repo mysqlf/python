@@ -9,6 +9,7 @@ class SplitSentenceBolt(BasicBolt):
     def __init__(self):
         super(SplitSentenceBolt, self).__init__(script=__file__)
 
+    @classmethod
     def declareOutputFields(self):
         return ['word']
 

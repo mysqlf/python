@@ -15,6 +15,7 @@ class RandomSentenceSpout(Spout):
     @classmethod
     def declareOutputFields(cls):
         return ['sentence']
+
     sentence = [
         "the cow jumped over the moon",
         "an apple a day keep the doctor away",

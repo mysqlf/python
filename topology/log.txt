@@ -1,0 +1,720 @@
+5415 [main] INFO  o.a.s.l.Localizer - Reconstruct localized resource: /tmp/415ca86c-cb04-402e-8fb1-6e0f8f5f4aa4/supervisor/usercache
+5415 [main] WARN  o.a.s.l.Localizer - No left over resources found for any user during reconstructing of local resources at: /tmp/415ca86c-cb04-402e-8fb1-6e0f8f5f4aa4/supervisor/usercache
+5416 [main] INFO  o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl - Starting
+5417 [main] INFO  o.a.s.s.o.a.z.ZooKeeper - Initiating client connection, connectString=localhost:2005 sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@32f96bba
+5421 [main-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2005. Will not attempt to authenticate using SASL (unknown error)
+5421 [main-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Socket connection established to localhost/127.0.0.1:2005, initiating session
+5423 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51411
+5423 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51411
+5442 [SyncThread:0] INFO  o.a.s.s.o.a.z.s.ZooKeeperServer - Established session 0x15a843e1a0c000b with negotiated timeout 20000 for client /127.0.0.1:51411
+5442 [main-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2005, sessionid = 0x15a843e1a0c000b, negotiated timeout = 20000
+5442 [main-EventThread] INFO  o.a.s.s.o.a.c.f.s.ConnectionStateManager - State change: CONNECTED
+5443 [main-EventThread] INFO  o.a.s.zookeeper - Zookeeper state update: :connected:none
+5444 [Curator-Framework-0] INFO  o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+5444 [ProcessThread(sid:0 cport:-1):] INFO  o.a.s.s.o.a.z.s.PrepRequestProcessor - Processed session termination for sessionid: 0x15a843e1a0c000b
+5458 [main] INFO  o.a.s.s.o.a.z.ZooKeeper - Session: 0x15a843e1a0c000b closed
+5459 [main] INFO  o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl - Starting
+5459 [main-EventThread] INFO  o.a.s.s.o.a.z.ClientCnxn - EventThread shut down
+5460 [main] INFO  o.a.s.s.o.a.z.ZooKeeper - Initiating client connection, connectString=localhost:2005/storm sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@72eb6200
+5461 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51411 which had sessionid 0x15a843e1a0c000b
+5464 [main-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2005. Will not attempt to authenticate using SASL (unknown error)
+5464 [main-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Socket connection established to localhost/127.0.0.1:2005, initiating session
+5465 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51412
+5465 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51412
+5484 [SyncThread:0] INFO  o.a.s.s.o.a.z.s.ZooKeeperServer - Established session 0x15a843e1a0c000c with negotiated timeout 20000 for client /127.0.0.1:51412
+5484 [main-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2005, sessionid = 0x15a843e1a0c000c, negotiated timeout = 20000
+5484 [main-EventThread] INFO  o.a.s.s.o.a.c.f.s.ConnectionStateManager - State change: CONNECTED
+5510 [main] INFO  o.a.s.d.supervisor - Starting supervisor with id b0f563b1-468d-4003-bfdc-b03d5f63f5cd at host sz6vm2
+5519 [main] INFO  o.a.s.l.ThriftAccessLogger - Request ID: 1 access from:  principal:  operation: submitTopology
+5574 [main] INFO  o.a.s.d.nimbus - Received topology submission for test topology with conf {"topology.max.task.parallelism" 1, "topology.submitter.principal" "", "topology.acker.executors" nil, "topology.eventlogger.executors" 0, "topology.workers" 1, "topology.debug" true, "storm.zookeeper.superACL" nil, "topology.users" (), "topology.submitter.user" "root", "topology.kryo.register" nil, "petrel.user" "root", "petrel.host" "sz6vm2", "topology.kryo.decorators" (), "storm.id" "test topology-1-1488277348", "topology.name" "test topology", "nimbus.host" "localhost"}
+5667 [main] INFO  o.a.s.d.nimbus - uploadedJar 
+5694 [main] INFO  o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl - Starting
+5695 [main] INFO  o.a.s.s.o.a.z.ZooKeeper - Initiating client connection, connectString=localhost:2005/storm sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@43c57161
+5697 [main-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2005. Will not attempt to authenticate using SASL (unknown error)
+5698 [main-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Socket connection established to localhost/127.0.0.1:2005, initiating session
+5698 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51413
+5698 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51413
+5717 [SyncThread:0] INFO  o.a.s.s.o.a.z.s.ZooKeeperServer - Established session 0x15a843e1a0c000d with negotiated timeout 20000 for client /127.0.0.1:51413
+5717 [main-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2005, sessionid = 0x15a843e1a0c000d, negotiated timeout = 20000
+5717 [main-EventThread] INFO  o.a.s.s.o.a.c.f.s.ConnectionStateManager - State change: CONNECTED
+5719 [ProcessThread(sid:0 cport:-1):] INFO  o.a.s.s.o.a.z.s.PrepRequestProcessor - Got user-level KeeperException when processing sessionid:0x15a843e1a0c000d type:create cxid:0x2 zxid:0x26 txntype:-1 reqpath:n/a Error Path:/storm/blobstoremaxkeysequencenumber Error:KeeperErrorCode = NoNode for /storm/blobstoremaxkeysequencenumber
+5809 [Curator-Framework-0] INFO  o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+5812 [ProcessThread(sid:0 cport:-1):] INFO  o.a.s.s.o.a.z.s.PrepRequestProcessor - Processed session termination for sessionid: 0x15a843e1a0c000d
+5825 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51413 which had sessionid 0x15a843e1a0c000d
+5825 [main] INFO  o.a.s.s.o.a.z.ZooKeeper - Session: 0x15a843e1a0c000d closed
+5826 [main-EventThread] INFO  o.a.s.s.o.a.z.ClientCnxn - EventThread shut down
+5826 [main] INFO  o.a.s.cluster - setup-path/blobstore/test topology-1-1488277348-stormconf.ser/sz6vm2:6627-1
+6006 [main] INFO  o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl - Starting
+6007 [main] INFO  o.a.s.s.o.a.z.ZooKeeper - Initiating client connection, connectString=localhost:2005/storm sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@b73433
+6008 [main-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2005. Will not attempt to authenticate using SASL (unknown error)
+6008 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51414
+6009 [main-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Socket connection established to localhost/127.0.0.1:2005, initiating session
+6009 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51414
+6059 [SyncThread:0] INFO  o.a.s.s.o.a.z.s.ZooKeeperServer - Established session 0x15a843e1a0c000e with negotiated timeout 20000 for client /127.0.0.1:51414
+6059 [main-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2005, sessionid = 0x15a843e1a0c000e, negotiated timeout = 20000
+6059 [main-EventThread] INFO  o.a.s.s.o.a.c.f.s.ConnectionStateManager - State change: CONNECTED
+6095 [Curator-Framework-0] INFO  o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+6105 [ProcessThread(sid:0 cport:-1):] INFO  o.a.s.s.o.a.z.s.PrepRequestProcessor - Processed session termination for sessionid: 0x15a843e1a0c000e
+6116 [main] INFO  o.a.s.s.o.a.z.ZooKeeper - Session: 0x15a843e1a0c000e closed
+6117 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51414 which had sessionid 0x15a843e1a0c000e
+6117 [main] INFO  o.a.s.cluster - setup-path/blobstore/test topology-1-1488277348-stormcode.ser/sz6vm2:6627-1
+6117 [main-EventThread] INFO  o.a.s.s.o.a.z.ClientCnxn - EventThread shut down
+6158 [main] INFO  o.a.s.d.nimbus - desired replication count 1 achieved, current-replication-count for conf key = 1, current-replication-count for code key = 1, current-replication-count for jar key = 1
+6232 [main] INFO  o.a.s.d.nimbus - Activating test topology: test topology-1-1488277348
+Topology is running. Press ^C to stop it.
+15458 [timer] INFO  o.a.s.s.EvenScheduler - Available slots: (["b0f563b1-468d-4003-bfdc-b03d5f63f5cd" 1027] ["b0f563b1-468d-4003-bfdc-b03d5f63f5cd" 1028] ["b0f563b1-468d-4003-bfdc-b03d5f63f5cd" 1029] ["23170441-64c6-4062-9ce2-fbe89858f6fa" 1024] ["23170441-64c6-4062-9ce2-fbe89858f6fa" 1025] ["23170441-64c6-4062-9ce2-fbe89858f6fa" 1026])
+15480 [timer] INFO  o.a.s.d.nimbus - Setting new assignment for topology id test topology-1-1488277348: #org.apache.storm.daemon.common.Assignment{:master-code-dir "/tmp/fcc9cce4-ced3-4fcb-91c4-0bccc043637b", :node->host {"b0f563b1-468d-4003-bfdc-b03d5f63f5cd" "sz6vm2"}, :executor->node+port {[4 4] ["b0f563b1-468d-4003-bfdc-b03d5f63f5cd" 1027], [3 3] ["b0f563b1-468d-4003-bfdc-b03d5f63f5cd" 1027], [2 2] ["b0f563b1-468d-4003-bfdc-b03d5f63f5cd" 1027], [1 1] ["b0f563b1-468d-4003-bfdc-b03d5f63f5cd" 1027]}, :executor->start-time-secs {[1 1] 1488277358, [2 2] 1488277358, [3 3] 1488277358, [4 4] 1488277358}, :worker->resources {["b0f563b1-468d-4003-bfdc-b03d5f63f5cd" 1027] [0.0 0.0 0.0]}}
+15577 [Thread-9] INFO  o.a.s.d.supervisor - Downloading code for storm id test topology-1-1488277348
+15583 [Thread-9] INFO  o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl - Starting
+15585 [Thread-9] INFO  o.a.s.s.o.a.z.ZooKeeper - Initiating client connection, connectString=localhost:2005/storm sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@7c3a84e0
+15587 [Thread-9] INFO  o.a.s.b.FileBlobStoreImpl - Creating new blob store based in /tmp/fcc9cce4-ced3-4fcb-91c4-0bccc043637b/blobs
+15591 [Thread-9-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2005. Will not attempt to authenticate using SASL (unknown error)
+15591 [Thread-9-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:2005, initiating session
+15591 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.NIOServerCnxnFactory - Accepted socket connection from /0:0:0:0:0:0:0:1:36496
+15591 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.ZooKeeperServer - Client attempting to establish new session at /0:0:0:0:0:0:0:1:36496
+15603 [Curator-Framework-0] INFO  o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+15611 [SyncThread:0] INFO  o.a.s.s.o.a.z.s.ZooKeeperServer - Established session 0x15a843e1a0c000f with negotiated timeout 20000 for client /0:0:0:0:0:0:0:1:36496
+15611 [Thread-9-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2005, sessionid = 0x15a843e1a0c000f, negotiated timeout = 20000
+15612 [ProcessThread(sid:0 cport:-1):] INFO  o.a.s.s.o.a.z.s.PrepRequestProcessor - Processed session termination for sessionid: 0x15a843e1a0c000f
+15627 [Thread-9] INFO  o.a.s.s.o.a.z.ZooKeeper - Session: 0x15a843e1a0c000f closed
+15628 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.NIOServerCnxn - Closed socket connection for client /0:0:0:0:0:0:0:1:36496 which had sessionid 0x15a843e1a0c000f
+15630 [Thread-9-EventThread] INFO  o.a.s.s.o.a.z.ClientCnxn - EventThread shut down
+16382 [Thread-9] INFO  o.a.s.d.supervisor - Extracting resources from jar at topology.jar to /tmp/415ca86c-cb04-402e-8fb1-6e0f8f5f4aa4/supervisor/stormdist/test%20topology-1-1488277348/resources
+16398 [Thread-9] INFO  o.a.s.d.supervisor - Finished downloading code for storm id test topology-1-1488277348
+16418 [Thread-10] INFO  o.a.s.d.supervisor - Launching worker with assignment {:storm-id "test topology-1-1488277348", :executors [[4 4] [3 3] [2 2] [1 1]], :resources #object[org.apache.storm.generated.WorkerResources 0x18fc71bf "WorkerResources(mem_on_heap:0.0, mem_off_heap:0.0, cpu:0.0)"]} for this supervisor b0f563b1-468d-4003-bfdc-b03d5f63f5cd on port 1027 with id fbf447b8-64f6-4943-9f18-06d652f74841
+16426 [Thread-10] INFO  o.a.s.d.worker - Launching worker for test topology-1-1488277348 on b0f563b1-468d-4003-bfdc-b03d5f63f5cd:1027 with id fbf447b8-64f6-4943-9f18-06d652f74841 and conf {"topology.builtin.metrics.bucket.size.secs" 60, "nimbus.childopts" "-Xmx1024m", "ui.filter.params" nil, "storm.cluster.mode" "local", "storm.messaging.netty.client_worker_threads" 1, "logviewer.max.per.worker.logs.size.mb" 2048, "supervisor.run.worker.as.user" false, "topology.max.task.parallelism" nil, "topology.priority" 29, "zmq.threads" 1, "storm.group.mapping.service" "org.apache.storm.security.auth.ShellBasedGroupsMapping", "transactional.zookeeper.root" "/transactional", "topology.sleep.spout.wait.strategy.time.ms" 1, "scheduler.display.resource" false, "topology.max.replication.wait.time.sec" 60, "drpc.invocations.port" 3773, "supervisor.localizer.cache.target.size.mb" 10240, "topology.multilang.serializer" "org.apache.storm.multilang.JsonSerializer", "storm.messaging.netty.server_worker_threads" 1, "nimbus.blobstore.class" "org.apache.storm.blobstore.LocalFsBlobStore", "resource.aware.scheduler.eviction.strategy" "org.apache.storm.scheduler.resource.strategies.eviction.DefaultEvictionStrategy", "topology.max.error.report.per.interval" 5, "storm.thrift.transport" "org.apache.storm.security.auth.SimpleTransportPlugin", "zmq.hwm" 0, "storm.group.mapping.service.params" nil, "worker.profiler.enabled" false, "storm.principal.tolocal" "org.apache.storm.security.auth.DefaultPrincipalToLocal", "supervisor.worker.shutdown.sleep.secs" 1, "pacemaker.host" "localhost", "storm.zookeeper.retry.times" 5, "ui.actions.enabled" true, "zmq.linger.millis" 0, "supervisor.enable" true, "topology.stats.sample.rate" 0.05, "storm.messaging.netty.min_wait_ms" 100, "worker.log.level.reset.poll.secs" 30, "storm.zookeeper.port" 2005, "supervisor.heartbeat.frequency.secs" 5, "topology.enable.message.timeouts" true, "supervisor.cpu.capacity" 400.0, "drpc.worker.threads" 64, "supervisor.blobstore.download.thread.count" 5, "drpc.queue.size" 128, "topology.backpressure.enable" false, "supervisor.blobstore.class" "org.apache.storm.blobstore.NimbusBlobStore", "storm.blobstore.inputstream.buffer.size.bytes" 65536, "topology.shellbolt.max.pending" 100, "drpc.https.keystore.password" "", "nimbus.code.sync.freq.secs" 120, "logviewer.port" 8000, "topology.scheduler.strategy" "org.apache.storm.scheduler.resource.strategies.scheduling.DefaultResourceAwareStrategy", "topology.executor.send.buffer.size" 1024, "resource.aware.scheduler.priority.strategy" "org.apache.storm.scheduler.resource.strategies.priority.DefaultSchedulingPriorityStrategy", "pacemaker.auth.method" "NONE", "storm.daemon.metrics.reporter.plugins" ["org.apache.storm.daemon.metrics.reporters.JmxPreparableReporter"], "topology.worker.logwriter.childopts" "-Xmx64m", "topology.spout.wait.strategy" "org.apache.storm.spout.SleepSpoutWaitStrategy", "ui.host" "0.0.0.0", "storm.nimbus.retry.interval.millis" 2000, "nimbus.inbox.jar.expiration.secs" 3600, "dev.zookeeper.path" "/tmp/dev-storm-zookeeper", "topology.acker.executors" nil, "topology.fall.back.on.java.serialization" true, "topology.eventlogger.executors" 0, "supervisor.localizer.cleanup.interval.ms" 600000, "storm.zookeeper.servers" ["localhost"], "nimbus.thrift.threads" 64, "logviewer.cleanup.age.mins" 10080, "topology.worker.childopts" nil, "topology.classpath" nil, "supervisor.monitor.frequency.secs" 3, "nimbus.credential.renewers.freq.secs" 600, "topology.skip.missing.kryo.registrations" true, "drpc.authorizer.acl.filename" "drpc-auth-acl.yaml", "pacemaker.kerberos.users" [], "storm.group.mapping.service.cache.duration.secs" 120, "topology.testing.always.try.serialize" false, "nimbus.monitor.freq.secs" 10, "storm.health.check.timeout.ms" 5000, "supervisor.supervisors" [], "topology.tasks" nil, "topology.bolts.outgoing.overflow.buffer.enable" false, "storm.messaging.netty.socket.backlog" 500, "topology.workers" 1, "pacemaker.base.threads" 10, "storm.local.dir" "/tmp/415ca86c-cb04-402e-8fb1-6e0f8f5f4aa4", "topology.disable.loadaware" false, "worker.childopts" "-Xmx%HEAP-MEM%m -XX:+PrintGCDetails -Xloggc:artifacts/gc.log -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=10 -XX:GCLogFileSize=1M -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=artifacts/heapdump", "storm.auth.simple-white-list.users" [], "topology.disruptor.batch.timeout.millis" 1, "topology.message.timeout.secs" 30, "topology.state.synchronization.timeout.secs" 60, "topology.tuple.serializer" "org.apache.storm.serialization.types.ListDelegateSerializer", "supervisor.supervisors.commands" [], "nimbus.blobstore.expiration.secs" 600, "logviewer.childopts" "-Xmx128m", "topology.environment" nil, "topology.debug" false, "topology.disruptor.batch.size" 100, "storm.messaging.netty.max_retries" 300, "ui.childopts" "-Xmx768m", "storm.network.topography.plugin" "org.apache.storm.networktopography.DefaultRackDNSToSwitchMapping", "storm.zookeeper.session.timeout" 20000, "drpc.childopts" "-Xmx768m", "drpc.http.creds.plugin" "org.apache.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.connection.timeout" 15000, "storm.zookeeper.auth.user" nil, "storm.meta.serialization.delegate" "org.apache.storm.serialization.GzipThriftSerializationDelegate", "topology.max.spout.pending" nil, "storm.codedistributor.class" "org.apache.storm.codedistributor.LocalFileSystemCodeDistributor", "nimbus.supervisor.timeout.secs" 60, "nimbus.task.timeout.secs" 30, "drpc.port" 3772, "pacemaker.max.threads" 50, "storm.zookeeper.retry.intervalceiling.millis" 30000, "nimbus.thrift.port" 6627, "storm.auth.simple-acl.admins" [], "topology.component.cpu.pcore.percent" 10.0, "supervisor.memory.capacity.mb" 3072.0, "storm.nimbus.retry.times" 5, "supervisor.worker.start.timeout.secs" 120, "storm.zookeeper.retry.interval" 1000, "logs.users" nil, "worker.profiler.command" "flight.bash", "transactional.zookeeper.port" nil, "drpc.max_buffer_size" 1048576, "pacemaker.thread.timeout" 10, "task.credentials.poll.secs" 30, "blobstore.superuser" "root", "drpc.https.keystore.type" "JKS", "topology.worker.receiver.thread.count" 1, "topology.state.checkpoint.interval.ms" 1000, "supervisor.slots.ports" (1027 1028 1029), "topology.transfer.buffer.size" 1024, "storm.health.check.dir" "healthchecks", "topology.worker.shared.thread.pool.size" 4, "drpc.authorizer.acl.strict" false, "nimbus.file.copy.expiration.secs" 600, "worker.profiler.childopts" "-XX:+UnlockCommercialFeatures -XX:+FlightRecorder", "topology.executor.receive.buffer.size" 1024, "backpressure.disruptor.low.watermark" 0.4, "nimbus.task.launch.secs" 120, "storm.local.mode.zmq" false, "storm.messaging.netty.buffer_size" 5242880, "storm.cluster.state.store" "org.apache.storm.cluster_state.zookeeper_state_factory", "worker.heartbeat.frequency.secs" 1, "storm.log4j2.conf.dir" "log4j2", "ui.http.creds.plugin" "org.apache.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.root" "/storm", "topology.tick.tuple.freq.secs" nil, "drpc.https.port" -1, "storm.workers.artifacts.dir" "workers-artifacts", "supervisor.blobstore.download.max_retries" 3, "task.refresh.poll.secs" 10, "storm.exhibitor.port" 8080, "task.heartbeat.frequency.secs" 3, "pacemaker.port" 6699, "storm.messaging.netty.max_wait_ms" 1000, "topology.component.resources.offheap.memory.mb" 0.0, "drpc.http.port" 3774, "topology.error.throttle.interval.secs" 10, "storm.messaging.transport" "org.apache.storm.messaging.netty.Context", "storm.messaging.netty.authentication" false, "topology.component.resources.onheap.memory.mb" 128.0, "topology.kryo.factory" "org.apache.storm.serialization.DefaultKryoFactory", "worker.gc.childopts" "", "nimbus.topology.validator" "org.apache.storm.nimbus.DefaultTopologyValidator", "nimbus.seeds" ["localhost"], "nimbus.queue.size" 100000, "nimbus.cleanup.inbox.freq.secs" 600, "storm.blobstore.replication.factor" 3, "worker.heap.memory.mb" 768, "logviewer.max.sum.worker.logs.size.mb" 4096, "pacemaker.childopts" "-Xmx1024m", "ui.users" nil, "transactional.zookeeper.servers" nil, "supervisor.worker.timeout.secs" 30, "storm.zookeeper.auth.password" nil, "storm.blobstore.acl.validation.enabled" false, "client.blobstore.class" "org.apache.storm.blobstore.NimbusBlobStore", "supervisor.childopts" "-Xmx256m", "topology.worker.max.heap.size.mb" 768.0, "ui.http.x-frame-options" "DENY", "backpressure.disruptor.high.watermark" 0.9, "ui.filter" nil, "ui.header.buffer.bytes" 4096, "topology.min.replication.count" 1, "topology.disruptor.wait.timeout.millis" 1000, "storm.nimbus.retry.intervalceiling.millis" 60000, "topology.trident.batch.emit.interval.millis" 50, "storm.auth.simple-acl.users" [], "drpc.invocations.threads" 64, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib", "ui.port" 8080, "storm.exhibitor.poll.uripath" "/exhibitor/v1/cluster/list", "storm.messaging.netty.transfer.batch.size" 262144, "logviewer.appender.name" "A1", "nimbus.thrift.max_buffer_size" 1048576, "storm.auth.simple-acl.users.commands" [], "drpc.request.timeout.secs" 600}
+16433 [Thread-10] INFO  o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl - Starting
+16433 [Thread-10] INFO  o.a.s.s.o.a.z.ZooKeeper - Initiating client connection, connectString=localhost:2005 sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@85ece7c
+16438 [Thread-10-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2005. Will not attempt to authenticate using SASL (unknown error)
+16438 [Thread-10-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Socket connection established to localhost/127.0.0.1:2005, initiating session
+16438 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51417
+16439 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51417
+16469 [SyncThread:0] INFO  o.a.s.s.o.a.z.s.ZooKeeperServer - Established session 0x15a843e1a0c0010 with negotiated timeout 20000 for client /127.0.0.1:51417
+16470 [Thread-10-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2005, sessionid = 0x15a843e1a0c0010, negotiated timeout = 20000
+16470 [Thread-10-EventThread] INFO  o.a.s.s.o.a.c.f.s.ConnectionStateManager - State change: CONNECTED
+16470 [Thread-10-EventThread] INFO  o.a.s.zookeeper - Zookeeper state update: :connected:none
+16471 [Curator-Framework-0] INFO  o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+16475 [ProcessThread(sid:0 cport:-1):] INFO  o.a.s.s.o.a.z.s.PrepRequestProcessor - Processed session termination for sessionid: 0x15a843e1a0c0010
+16494 [Thread-10] INFO  o.a.s.s.o.a.z.ZooKeeper - Session: 0x15a843e1a0c0010 closed
+16494 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.NIOServerCnxn - Closed socket connection for client /127.0.0.1:51417 which had sessionid 0x15a843e1a0c0010
+16495 [Thread-10] INFO  o.a.s.s.o.a.c.f.i.CuratorFrameworkImpl - Starting
+16498 [Thread-10-EventThread] INFO  o.a.s.s.o.a.z.ClientCnxn - EventThread shut down
+16502 [Thread-10] INFO  o.a.s.s.o.a.z.ZooKeeper - Initiating client connection, connectString=localhost:2005/storm sessionTimeout=20000 watcher=org.apache.storm.shade.org.apache.curator.ConnectionState@2c1449c9
+16506 [Thread-10-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:2005. Will not attempt to authenticate using SASL (unknown error)
+16506 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:51418
+16506 [Thread-10-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Socket connection established to localhost/127.0.0.1:2005, initiating session
+16506 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2005] INFO  o.a.s.s.o.a.z.s.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:51418
+16519 [SyncThread:0] INFO  o.a.s.s.o.a.z.s.ZooKeeperServer - Established session 0x15a843e1a0c0011 with negotiated timeout 20000 for client /127.0.0.1:51418
+16519 [Thread-10-SendThread(localhost:2005)] INFO  o.a.s.s.o.a.z.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:2005, sessionid = 0x15a843e1a0c0011, negotiated timeout = 20000
+16519 [Thread-10-EventThread] INFO  o.a.s.s.o.a.c.f.s.ConnectionStateManager - State change: CONNECTED
+16528 [Thread-10] INFO  o.a.s.s.a.AuthUtils - Got AutoCreds []
+16532 [Thread-10] INFO  o.a.s.d.worker - Reading Assignments.
+16626 [Thread-10] INFO  o.a.s.d.worker - Registering IConnectionCallbacks for b0f563b1-468d-4003-bfdc-b03d5f63f5cd:1027
+16906 [Thread-10] INFO  o.a.s.d.executor - Loading executor count:[2 2]
+16917 [Thread-10] INFO  o.a.s.d.task - Emitting: count __system ["startup"]
+16918 [Thread-10] INFO  o.a.s.d.executor - Loaded executor tasks count:[2 2]
+17145 [Thread-10] INFO  o.a.s.d.executor - Finished loading executor count:[2 2]
+17159 [Thread-10] INFO  o.a.s.d.executor - Loading executor split:[3 3]
+17160 [Thread-10] INFO  o.a.s.d.task - Emitting: split __system ["startup"]
+17160 [Thread-10] INFO  o.a.s.d.executor - Loaded executor tasks split:[3 3]
+17164 [Thread-10] INFO  o.a.s.d.executor - Finished loading executor split:[3 3]
+17172 [Thread-10] INFO  o.a.s.d.executor - Loading executor __acker:[1 1]
+17181 [Thread-10] INFO  o.a.s.d.task - Emitting: __acker __system ["startup"]
+17181 [Thread-10] INFO  o.a.s.d.executor - Loaded executor tasks __acker:[1 1]
+17187 [Thread-10] INFO  o.a.s.d.executor - Timeouts disabled for executor __acker:[1 1]
+17188 [Thread-10] INFO  o.a.s.d.executor - Finished loading executor __acker:[1 1]
+17196 [Thread-10] INFO  o.a.s.d.executor - Loading executor __system:[-1 -1]
+17198 [Thread-10] INFO  o.a.s.d.task - Emitting: __system __system ["startup"]
+17200 [Thread-10] INFO  o.a.s.d.executor - Loaded executor tasks __system:[-1 -1]
+17207 [Thread-10] INFO  o.a.s.d.executor - Finished loading executor __system:[-1 -1]
+17213 [Thread-10] INFO  o.a.s.d.executor - Loading executor spout:[4 4]
+17217 [Thread-10] INFO  o.a.s.d.task - Emitting: spout __system ["startup"]
+17217 [Thread-10] INFO  o.a.s.d.executor - Loaded executor tasks spout:[4 4]
+17226 [Thread-10] INFO  o.a.s.d.executor - Finished loading executor spout:[4 4]
+17239 [Thread-10] INFO  o.a.s.d.worker - Started with log levels: {"" #object[org.apache.logging.log4j.Level 0x76bd89f8 "INFO"], "org.apache.zookeeper" #object[org.apache.logging.log4j.Level 0x782cc9ff "WARN"]}
+17251 [Thread-10] INFO  o.a.s.d.worker - Worker has topology config {"topology.builtin.metrics.bucket.size.secs" 60, "nimbus.childopts" "-Xmx1024m", "ui.filter.params" nil, "storm.cluster.mode" "local", "storm.messaging.netty.client_worker_threads" 1, "logviewer.max.per.worker.logs.size.mb" 2048, "supervisor.run.worker.as.user" false, "topology.max.task.parallelism" 1, "topology.priority" 29, "zmq.threads" 1, "storm.group.mapping.service" "org.apache.storm.security.auth.ShellBasedGroupsMapping", "transactional.zookeeper.root" "/transactional", "topology.sleep.spout.wait.strategy.time.ms" 1, "scheduler.display.resource" false, "topology.max.replication.wait.time.sec" 60, "drpc.invocations.port" 3773, "supervisor.localizer.cache.target.size.mb" 10240, "topology.multilang.serializer" "org.apache.storm.multilang.JsonSerializer", "storm.messaging.netty.server_worker_threads" 1, "nimbus.blobstore.class" "org.apache.storm.blobstore.LocalFsBlobStore", "resource.aware.scheduler.eviction.strategy" "org.apache.storm.scheduler.resource.strategies.eviction.DefaultEvictionStrategy", "topology.max.error.report.per.interval" 5, "storm.thrift.transport" "org.apache.storm.security.auth.SimpleTransportPlugin", "zmq.hwm" 0, "storm.group.mapping.service.params" nil, "worker.profiler.enabled" false, "storm.principal.tolocal" "org.apache.storm.security.auth.DefaultPrincipalToLocal", "supervisor.worker.shutdown.sleep.secs" 1, "pacemaker.host" "localhost", "storm.zookeeper.retry.times" 5, "ui.actions.enabled" true, "zmq.linger.millis" 0, "supervisor.enable" true, "topology.stats.sample.rate" 0.05, "storm.messaging.netty.min_wait_ms" 100, "worker.log.level.reset.poll.secs" 30, "storm.zookeeper.port" 2005, "supervisor.heartbeat.frequency.secs" 5, "topology.enable.message.timeouts" true, "supervisor.cpu.capacity" 400.0, "drpc.worker.threads" 64, "supervisor.blobstore.download.thread.count" 5, "drpc.queue.size" 128, "topology.backpressure.enable" false, "supervisor.blobstore.class" "org.apache.storm.blobstore.NimbusBlobStore", "storm.blobstore.inputstream.buffer.size.bytes" 65536, "topology.shellbolt.max.pending" 100, "drpc.https.keystore.password" "", "nimbus.code.sync.freq.secs" 120, "logviewer.port" 8000, "topology.scheduler.strategy" "org.apache.storm.scheduler.resource.strategies.scheduling.DefaultResourceAwareStrategy", "topology.executor.send.buffer.size" 1024, "resource.aware.scheduler.priority.strategy" "org.apache.storm.scheduler.resource.strategies.priority.DefaultSchedulingPriorityStrategy", "pacemaker.auth.method" "NONE", "storm.daemon.metrics.reporter.plugins" ["org.apache.storm.daemon.metrics.reporters.JmxPreparableReporter"], "topology.worker.logwriter.childopts" "-Xmx64m", "topology.spout.wait.strategy" "org.apache.storm.spout.SleepSpoutWaitStrategy", "ui.host" "0.0.0.0", "topology.submitter.principal" "", "storm.nimbus.retry.interval.millis" 2000, "nimbus.inbox.jar.expiration.secs" 3600, "dev.zookeeper.path" "/tmp/dev-storm-zookeeper", "topology.acker.executors" nil, "topology.fall.back.on.java.serialization" true, "topology.eventlogger.executors" 0, "supervisor.localizer.cleanup.interval.ms" 600000, "storm.zookeeper.servers" ["localhost"], "nimbus.thrift.threads" 64, "logviewer.cleanup.age.mins" 10080, "topology.worker.childopts" nil, "topology.classpath" nil, "supervisor.monitor.frequency.secs" 3, "nimbus.credential.renewers.freq.secs" 600, "topology.skip.missing.kryo.registrations" true, "drpc.authorizer.acl.filename" "drpc-auth-acl.yaml", "pacemaker.kerberos.users" [], "storm.group.mapping.service.cache.duration.secs" 120, "topology.testing.always.try.serialize" false, "nimbus.monitor.freq.secs" 10, "storm.health.check.timeout.ms" 5000, "supervisor.supervisors" [], "topology.tasks" nil, "topology.bolts.outgoing.overflow.buffer.enable" false, "storm.messaging.netty.socket.backlog" 500, "topology.workers" 1, "pacemaker.base.threads" 10, "storm.local.dir" "/tmp/fcc9cce4-ced3-4fcb-91c4-0bccc043637b", "topology.disable.loadaware" false, "worker.childopts" "-Xmx%HEAP-MEM%m -XX:+PrintGCDetails -Xloggc:artifacts/gc.log -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=10 -XX:GCLogFileSize=1M -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=artifacts/heapdump", "storm.auth.simple-white-list.users" [], "topology.disruptor.batch.timeout.millis" 1, "topology.message.timeout.secs" 30, "topology.state.synchronization.timeout.secs" 60, "topology.tuple.serializer" "org.apache.storm.serialization.types.ListDelegateSerializer", "supervisor.supervisors.commands" [], "nimbus.blobstore.expiration.secs" 600, "logviewer.childopts" "-Xmx128m", "topology.environment" nil, "topology.debug" true, "topology.disruptor.batch.size" 100, "storm.messaging.netty.max_retries" 300, "ui.childopts" "-Xmx768m", "storm.network.topography.plugin" "org.apache.storm.networktopography.DefaultRackDNSToSwitchMapping", "storm.zookeeper.session.timeout" 20000, "drpc.childopts" "-Xmx768m", "drpc.http.creds.plugin" "org.apache.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.connection.timeout" 15000, "storm.zookeeper.auth.user" nil, "storm.meta.serialization.delegate" "org.apache.storm.serialization.GzipThriftSerializationDelegate", "topology.max.spout.pending" nil, "storm.codedistributor.class" "org.apache.storm.codedistributor.LocalFileSystemCodeDistributor", "nimbus.supervisor.timeout.secs" 60, "nimbus.task.timeout.secs" 30, "storm.zookeeper.superACL" nil, "drpc.port" 3772, "pacemaker.max.threads" 50, "storm.zookeeper.retry.intervalceiling.millis" 30000, "nimbus.thrift.port" 6627, "storm.auth.simple-acl.admins" [], "topology.component.cpu.pcore.percent" 10.0, "supervisor.memory.capacity.mb" 3072.0, "storm.nimbus.retry.times" 5, "supervisor.worker.start.timeout.secs" 120, "storm.zookeeper.retry.interval" 1000, "logs.users" nil, "worker.profiler.command" "flight.bash", "transactional.zookeeper.port" nil, "drpc.max_buffer_size" 1048576, "pacemaker.thread.timeout" 10, "task.credentials.poll.secs" 30, "blobstore.superuser" "root", "drpc.https.keystore.type" "JKS", "topology.worker.receiver.thread.count" 1, "topology.state.checkpoint.interval.ms" 1000, "supervisor.slots.ports" [6700 6701 6702 6703], "topology.transfer.buffer.size" 1024, "storm.health.check.dir" "healthchecks", "topology.worker.shared.thread.pool.size" 4, "drpc.authorizer.acl.strict" false, "nimbus.file.copy.expiration.secs" 600, "worker.profiler.childopts" "-XX:+UnlockCommercialFeatures -XX:+FlightRecorder", "topology.executor.receive.buffer.size" 1024, "backpressure.disruptor.low.watermark" 0.4, "topology.users" [], "nimbus.task.launch.secs" 120, "storm.local.mode.zmq" false, "storm.messaging.netty.buffer_size" 5242880, "storm.cluster.state.store" "org.apache.storm.cluster_state.zookeeper_state_factory", "worker.heartbeat.frequency.secs" 1, "storm.log4j2.conf.dir" "log4j2", "ui.http.creds.plugin" "org.apache.storm.security.auth.DefaultHttpCredentialsPlugin", "storm.zookeeper.root" "/storm", "topology.submitter.user" "root", "topology.tick.tuple.freq.secs" nil, "drpc.https.port" -1, "storm.workers.artifacts.dir" "workers-artifacts", "supervisor.blobstore.download.max_retries" 3, "task.refresh.poll.secs" 10, "storm.exhibitor.port" 8080, "task.heartbeat.frequency.secs" 3, "pacemaker.port" 6699, "storm.messaging.netty.max_wait_ms" 1000, "topology.component.resources.offheap.memory.mb" 0.0, "drpc.http.port" 3774, "topology.error.throttle.interval.secs" 10, "storm.messaging.transport" "org.apache.storm.messaging.netty.Context", "storm.messaging.netty.authentication" false, "topology.component.resources.onheap.memory.mb" 128.0, "topology.kryo.factory" "org.apache.storm.serialization.DefaultKryoFactory", "topology.kryo.register" nil, "worker.gc.childopts" "", "nimbus.topology.validator" "org.apache.storm.nimbus.DefaultTopologyValidator", "nimbus.seeds" ["localhost"], "nimbus.queue.size" 100000, "nimbus.cleanup.inbox.freq.secs" 600, "storm.blobstore.replication.factor" 3, "worker.heap.memory.mb" 768, "logviewer.max.sum.worker.logs.size.mb" 4096, "pacemaker.childopts" "-Xmx1024m", "petrel.user" "root", "ui.users" nil, "transactional.zookeeper.servers" nil, "supervisor.worker.timeout.secs" 30, "storm.zookeeper.auth.password" nil, "storm.blobstore.acl.validation.enabled" false, "client.blobstore.class" "org.apache.storm.blobstore.NimbusBlobStore", "petrel.host" "sz6vm2", "supervisor.childopts" "-Xmx256m", "topology.worker.max.heap.size.mb" 768.0, "ui.http.x-frame-options" "DENY", "backpressure.disruptor.high.watermark" 0.9, "ui.filter" nil, "ui.header.buffer.bytes" 4096, "topology.min.replication.count" 1, "topology.disruptor.wait.timeout.millis" 1000, "storm.nimbus.retry.intervalceiling.millis" 60000, "topology.trident.batch.emit.interval.millis" 50, "storm.auth.simple-acl.users" [], "drpc.invocations.threads" 64, "java.library.path" "/usr/local/lib:/opt/local/lib:/usr/lib", "ui.port" 8080, "topology.kryo.decorators" [], "storm.id" "test topology-1-1488277348", "topology.name" "test topology", "storm.exhibitor.poll.uripath" "/exhibitor/v1/cluster/list", "storm.messaging.netty.transfer.batch.size" 262144, "logviewer.appender.name" "A1", "nimbus.thrift.max_buffer_size" 1048576, "nimbus.host" "localhost", "storm.auth.simple-acl.users.commands" [], "drpc.request.timeout.secs" 600}
+17252 [Thread-10] INFO  o.a.s.d.worker - Worker fbf447b8-64f6-4943-9f18-06d652f74841 for storm test topology-1-1488277348 on b0f563b1-468d-4003-bfdc-b03d5f63f5cd:1027 has finished loading
+17253 [Thread-10] INFO  o.a.s.config - SET worker-user fbf447b8-64f6-4943-9f18-06d652f74841 
+17573 [refresh-active-timer] INFO  o.a.s.d.worker - All connections are ready for worker b0f563b1-468d-4003-bfdc-b03d5f63f5cd:1027 with id fbf447b8-64f6-4943-9f18-06d652f74841
+17592 [Thread-19-__acker-executor[1 1]] INFO  o.a.s.d.executor - Preparing bolt __acker:(1)
+17603 [Thread-19-__acker-executor[1 1]] INFO  o.a.s.d.executor - Prepared bolt __acker:(1)
+17607 [Thread-21-__system-executor[-1 -1]] INFO  o.a.s.d.executor - Preparing bolt __system:(-1)
+17613 [Thread-21-__system-executor[-1 -1]] INFO  o.a.s.d.executor - Prepared bolt __system:(-1)
+17630 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - Opening spout spout:(4)
+17633 [Thread-23-spout-executor[4 4]] INFO  o.a.s.u.ShellProcess - Storm multilang serializer: org.apache.storm.multilang.JsonSerializer
+17651 [Thread-15-count-executor[2 2]] INFO  o.a.s.d.executor - Preparing bolt count:(2)
+17652 [Thread-15-count-executor[2 2]] INFO  o.a.s.u.ShellProcess - Storm multilang serializer: org.apache.storm.multilang.JsonSerializer
+17667 [Thread-17-split-executor[3 3]] INFO  o.a.s.d.executor - Preparing bolt split:(3)
+17668 [Thread-17-split-executor[3 3]] INFO  o.a.s.u.ShellProcess - Storm multilang serializer: org.apache.storm.multilang.JsonSerializer
+51717 [Thread-15-count-executor[2 2]] INFO  o.a.s.t.ShellBolt - Launched subprocess with pid 3197
+51728 [Thread-15-count-executor[2 2]] INFO  o.a.s.t.ShellBolt - Start checking heartbeat...
+51737 [Thread-15-count-executor[2 2]] INFO  o.a.s.d.executor - Prepared bolt count:(2)
+52012 [Thread-23-spout-executor[4 4]] INFO  o.a.s.s.ShellSpout - Launched subprocess with pid 3191
+52013 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - Opened spout spout:(4)
+52015 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - Processing received message FOR -2 TUPLE: source: __system:-1, stream: __tick, id: {}, [30]
+52015 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - Activating spout spout:(4)
+52015 [Thread-23-spout-executor[4 4]] INFO  o.a.s.s.ShellSpout - Start checking heartbeat...
+52272 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["an apple a day keep the doctor away"]
+52273 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["an apple a day keep the doctor away"]]
+52491 [Thread-17-split-executor[3 3]] INFO  o.a.s.t.ShellBolt - Launched subprocess with pid 3203
+52491 [Thread-17-split-executor[3 3]] INFO  o.a.s.t.ShellBolt - Start checking heartbeat...
+52493 [Thread-17-split-executor[3 3]] INFO  o.a.s.d.executor - Prepared bolt split:(3)
+52493 [Thread-17-split-executor[3 3]] INFO  o.a.s.d.executor - Processing received message FOR 3 TUPLE: source: spout:4, stream: default, id: {}, ["an apple a day keep the doctor away"]
+52494 [Thread-17-split-executor[3 3]] INFO  o.a.s.d.executor - Execute done TUPLE source: spout:4, stream: default, id: {}, ["an apple a day keep the doctor away"] TASK: 3 DELTA: 
+52505 [Thread-28] ERROR o.a.s.t.ShellBolt - Halting process: ShellBolt died. Command: [/bin/bash, setup_splitsentence.sh], ProcessInfo pid:3203, name:split exitCode:-1, errorString: 
+java.lang.RuntimeException: org.apache.storm.multilang.NoOutputException: Pipe to subprocess seems to be broken! No output read.
+Serializer Exception:
+Fatal Python error: Cannot recover from stack overflow.
+
+Current thread 0x00007f23fbf98700 (most recent call first):
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 274 in __init__
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1385 in makeRecord
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1415 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 908 in handleError
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 987 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  ...
+
+
+    at org.apache.storm.utils.ShellProcess.readShellMsg(ShellProcess.java:122) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.task.ShellBolt$BoltReaderRunnable.run(ShellBolt.java:333) [storm-core-1.0.2.jar:1.0.2]
+    at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+52519 [Thread-28] ERROR o.a.s.d.executor - 
+java.lang.RuntimeException: org.apache.storm.multilang.NoOutputException: Pipe to subprocess seems to be broken! No output read.
+Serializer Exception:
+Fatal Python error: Cannot recover from stack overflow.
+
+Current thread 0x00007f23fbf98700 (most recent call first):
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 274 in __init__
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1385 in makeRecord
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1415 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 908 in handleError
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 987 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  ...
+
+
+    at org.apache.storm.utils.ShellProcess.readShellMsg(ShellProcess.java:122) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.task.ShellBolt$BoltReaderRunnable.run(ShellBolt.java:333) [storm-core-1.0.2.jar:1.0.2]
+    at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+52524 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["an apple a day keep the doctor away"]
+52525 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["an apple a day keep the doctor away"]]
+52528 [Thread-17-split-executor[3 3]] INFO  o.a.s.d.executor - Processing received message FOR 3 TUPLE: source: spout:4, stream: default, id: {}, ["an apple a day keep the doctor away"]
+52528 [Thread-17-split-executor[3 3]] ERROR o.a.s.util - Async loop died!
+java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: pid:3203, name:split exitCode:-1, errorString: 
+    at org.apache.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:464) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:430) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:73) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.daemon.executor$fn__8058$fn__8071$fn__8124.invoke(executor.clj:850) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.util$async_loop$fn__624.invoke(util.clj:484) [storm-core-1.0.2.jar:1.0.2]
+    at clojure.lang.AFn.run(AFn.java:22) [clojure-1.7.0.jar:?]
+    at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: pid:3203, name:split exitCode:-1, errorString: 
+    at org.apache.storm.task.ShellBolt.execute(ShellBolt.java:150) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.daemon.executor$fn__8058$tuple_action_fn__8060.invoke(executor.clj:731) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.daemon.executor$mk_task_receiver$fn__7979.invoke(executor.clj:464) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.disruptor$clojure_handler$reify__7492.onEvent(disruptor.clj:40) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:451) ~[storm-core-1.0.2.jar:1.0.2]
+    ... 6 more
+Caused by: java.lang.RuntimeException: pid:3203, name:split exitCode:-1, errorString: 
+    at org.apache.storm.task.ShellBolt.die(ShellBolt.java:295) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.task.ShellBolt.access$400(ShellBolt.java:70) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.task.ShellBolt$BoltReaderRunnable.run(ShellBolt.java:367) ~[storm-core-1.0.2.jar:1.0.2]
+    ... 1 more
+Caused by: java.lang.RuntimeException: org.apache.storm.multilang.NoOutputException: Pipe to subprocess seems to be broken! No output read.
+Serializer Exception:
+Fatal Python error: Cannot recover from stack overflow.
+
+Current thread 0x00007f23fbf98700 (most recent call first):
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 274 in __init__
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1385 in makeRecord
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1415 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 908 in handleError
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 987 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  ...
+
+
+    at org.apache.storm.utils.ShellProcess.readShellMsg(ShellProcess.java:122) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.task.ShellBolt$BoltReaderRunnable.run(ShellBolt.java:333) ~[storm-core-1.0.2.jar:1.0.2]
+    ... 1 more
+52530 [Thread-17-split-executor[3 3]] ERROR o.a.s.d.executor - 
+java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: pid:3203, name:split exitCode:-1, errorString: 
+    at org.apache.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:464) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.utils.DisruptorQueue.consumeBatchWhenAvailable(DisruptorQueue.java:430) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.disruptor$consume_batch_when_available.invoke(disruptor.clj:73) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.daemon.executor$fn__8058$fn__8071$fn__8124.invoke(executor.clj:850) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.util$async_loop$fn__624.invoke(util.clj:484) [storm-core-1.0.2.jar:1.0.2]
+    at clojure.lang.AFn.run(AFn.java:22) [clojure-1.7.0.jar:?]
+    at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: pid:3203, name:split exitCode:-1, errorString: 
+    at org.apache.storm.task.ShellBolt.execute(ShellBolt.java:150) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.daemon.executor$fn__8058$tuple_action_fn__8060.invoke(executor.clj:731) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.daemon.executor$mk_task_receiver$fn__7979.invoke(executor.clj:464) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.disruptor$clojure_handler$reify__7492.onEvent(disruptor.clj:40) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.utils.DisruptorQueue.consumeBatchToCursor(DisruptorQueue.java:451) ~[storm-core-1.0.2.jar:1.0.2]
+    ... 6 more
+Caused by: java.lang.RuntimeException: pid:3203, name:split exitCode:-1, errorString: 
+    at org.apache.storm.task.ShellBolt.die(ShellBolt.java:295) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.task.ShellBolt.access$400(ShellBolt.java:70) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.task.ShellBolt$BoltReaderRunnable.run(ShellBolt.java:367) ~[storm-core-1.0.2.jar:1.0.2]
+    ... 1 more
+Caused by: java.lang.RuntimeException: org.apache.storm.multilang.NoOutputException: Pipe to subprocess seems to be broken! No output read.
+Serializer Exception:
+Fatal Python error: Cannot recover from stack overflow.
+
+Current thread 0x00007f23fbf98700 (most recent call first):
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 274 in __init__
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1385 in makeRecord
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1415 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 908 in handleError
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 987 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1426 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1416 in _log
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1309 in error
+  File "/tmp/petrel-20topology-1-1488277348/venv/lib/python3.5/site-packages/petrel-1.0.2.0.3-py3.5.egg/petrel/storm.py", line 555 in write
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 983 in emit
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 856 in handle
+  File "/usr/local/python3/lib/python3.5/logging/__init__.py", line 1496 in callHandlers
+  ...
+
+
+    at org.apache.storm.utils.ShellProcess.readShellMsg(ShellProcess.java:122) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.task.ShellBolt$BoltReaderRunnable.run(ShellBolt.java:333) ~[storm-core-1.0.2.jar:1.0.2]
+    ... 1 more
+52630 [ProcessThread(sid:0 cport:-1):] INFO  o.a.s.s.o.a.z.s.PrepRequestProcessor - Got user-level KeeperException when processing sessionid:0x15a843e1a0c0011 type:create cxid:0x75 zxid:0x5e txntype:-1 reqpath:n/a Error Path:/storm/errors/test topology-1-1488277348/split Error:KeeperErrorCode = NodeExists for /storm/errors/test topology-1-1488277348/split
+52776 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["an apple a day keep the doctor away"]
+52777 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["an apple a day keep the doctor away"]]
+Shutting down local topology
+52923 [Thread-11] INFO  o.a.s.d.nimbus - Shutting down master
+2017-02-28 18:23:15,982 FATAL Unable to register shutdown hook because JVM is shutting down.
+53028 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["the cow jumped over the moon"]
+53028 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["the cow jumped over the moon"]]
+53047 [Thread-17-split-executor[3 3]] ERROR o.a.s.util - Halting process: ("Worker died")
+java.lang.RuntimeException: ("Worker died")
+    at org.apache.storm.util$exit_process_BANG_.doInvoke(util.clj:341) [storm-core-1.0.2.jar:1.0.2]
+    at clojure.lang.RestFn.invoke(RestFn.java:423) [clojure-1.7.0.jar:?]
+    at org.apache.storm.daemon.worker$fn__8659$fn__8660.invoke(worker.clj:761) [storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.daemon.executor$mk_executor_data$fn__7875$fn__7876.invoke(executor.clj:274) [storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.util$async_loop$fn__624.invoke(util.clj:494) [storm-core-1.0.2.jar:1.0.2]
+    at clojure.lang.AFn.run(AFn.java:22) [clojure-1.7.0.jar:?]
+    at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+53151 [Thread-11] INFO  o.a.s.zookeeper - closing zookeeper connection of leader elector.
+53201 [Thread-11] INFO  o.a.s.d.nimbus - Shut down master
+53280 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["an apple a day keep the doctor away"]
+53280 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["an apple a day keep the doctor away"]]
+53336 [Thread-11] INFO  o.a.s.d.supervisor - Shutting down supervisor 23170441-64c6-4062-9ce2-fbe89858f6fa
+53338 [Thread-7] INFO  o.a.s.event - Event manager interrupted
+53338 [Thread-8] INFO  o.a.s.event - Event manager interrupted
+53394 [Thread-11] INFO  o.a.s.d.supervisor - Shutting down b0f563b1-468d-4003-bfdc-b03d5f63f5cd:fbf447b8-64f6-4943-9f18-06d652f74841
+53394 [Thread-11] INFO  o.a.s.config - GET worker-user fbf447b8-64f6-4943-9f18-06d652f74841
+53402 [Thread-11] INFO  o.a.s.process-simulator - Killing process a593f8c7-a895-4179-83c0-b1c6efe6f429
+53403 [Thread-11] INFO  o.a.s.d.worker - Shutting down worker test topology-1-1488277348 b0f563b1-468d-4003-bfdc-b03d5f63f5cd 1027
+53403 [Thread-11] INFO  o.a.s.d.worker - Terminating messaging context
+53403 [Thread-11] INFO  o.a.s.d.worker - Shutting down executors
+53406 [Thread-11] INFO  o.a.s.d.executor - Shutting down executor count:[2 2]
+53407 [Thread-15-count-executor[2 2]] INFO  o.a.s.util - Async loop interrupted!
+53408 [Thread-14-disruptor-executor[2 2]-send-queue] INFO  o.a.s.util - Async loop interrupted!
+53412 [Thread-26] ERROR o.a.s.d.executor - 
+java.lang.RuntimeException: org.apache.storm.multilang.NoOutputException: Pipe to subprocess seems to be broken! No output read.
+Serializer Exception:
+
+
+    at org.apache.storm.utils.ShellProcess.readShellMsg(ShellProcess.java:122) ~[storm-core-1.0.2.jar:1.0.2]
+    at org.apache.storm.task.ShellBolt$BoltReaderRunnable.run(ShellBolt.java:333) [storm-core-1.0.2.jar:1.0.2]
+    at java.lang.Thread.run(Thread.java:745) [?:1.8.0_121]
+53416 [Thread-11] INFO  o.a.s.d.executor - Shut down executor count:[2 2]
+53416 [Thread-11] INFO  o.a.s.d.executor - Shutting down executor split:[3 3]
+53416 [Thread-16-disruptor-executor[3 3]-send-queue] INFO  o.a.s.util - Async loop interrupted!
+53531 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["an apple a day keep the doctor away"]
+53531 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["an apple a day keep the doctor away"]]
+53782 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["an apple a day keep the doctor away"]
+53783 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["an apple a day keep the doctor away"]]
+54034 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["the cow jumped over the moon"]
+54034 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["the cow jumped over the moon"]]
+54285 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["an apple a day keep the doctor away"]
+54285 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["an apple a day keep the doctor away"]]
+54537 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["the cow jumped over the moon"]
+54537 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["the cow jumped over the moon"]]
+54789 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["the cow jumped over the moon"]
+54789 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["the cow jumped over the moon"]]
+55040 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["the cow jumped over the moon"]
+55040 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["the cow jumped over the moon"]]
+55292 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["the cow jumped over the moon"]
+55292 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["the cow jumped over the moon"]]
+55543 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["the cow jumped over the moon"]
+55543 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["the cow jumped over the moon"]]
+55794 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["an apple a day keep the doctor away"]
+55794 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["an apple a day keep the doctor away"]]
+56045 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.task - Emitting: spout default ["an apple a day keep the doctor away"]
+56045 [Thread-23-spout-executor[4 4]] INFO  o.a.s.d.executor - TRANSFERING tuple [dest: 3 tuple: source: spout:4, stream: default, id: {}, ["an apple a day keep the doctor away"]]
