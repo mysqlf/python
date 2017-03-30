@@ -3,66 +3,7 @@
 import requests
 from bs4 import BeautifulSoup
 import os
-# import io
 import sys
-
-# sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf8')
-
-
-# class meizi():
-
-#     def all_url(self, url):
-#         html = self.requres(url)
-#         all_a = BeautifulSoup(html.text, 'lxml').find(
-#             'div', class_='all').find_all('a')
-#         for a in all_a:
-#             title = a.get_text()
-#             print(u'开始保存', title)
-#             path = str(title).replace("?", "_")
-#             self.mkdir(path)
-#             os.chdir(path)
-#             href = a['href']
-#             self.html(href)
-
-#     def html(self, href):
-#         html = self.requres(href)
-#         max_span = BeautifulSoup(html.text, 'lxml').find_all(
-#             'span')[10].get_text()
-#         for page in range(1, int(max_span)+1):
-#             page_url = href+'/'+str(page)
-#             self.img(page_url)
-
-#     def img(self, page_url):
-#         img_html = self.requres(page_url)
-#         img_url = BeautifulSoup(img_html.text, 'lxml').find(
-#             'div', class_='main-image').find('img')['src']
-#         self.save(img_url)
-
-#     def save(self, img_url):
-#         name = img_url[-9:-4]
-#         img = self.requres(img_url)
-#         f = open(name+'.jpg', 'ab')
-#         f.write(img.content)
-#         f.close()
-
-#     def requres(self, url):
-#         headers = {'User-Agent':
-#                    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1"}
-#         content = requests.get(url, headers=headers)
-#         return content
-
-#     def mkdir(self, path):
-#         path = path.strip()
-#         isExists = os.path.exists(os.path.join("D:\meizi", path))
-#         if not isExists:
-#             print(u'新建了一个名为', path, u'的文件夹')
-#             os.makedirs(os.path.join("D:\meizi", path))
-#             return True
-#         else:
-#             print('文件夹已存在')
-#             return False
-# Mzitu = meizi()  # 实例化
-# Mzitu.all_url('http://www.mzitu.com/all')  # 给函数all_url传入参数  你可以当作启动爬虫（就是入口）
 
 
 class mzitu():
