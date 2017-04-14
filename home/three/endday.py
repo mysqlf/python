@@ -28,3 +28,13 @@ def get_previous_byday(dayname, start_date=None):
     return target_date
 
 print(get_previous_byday('Monday'))
+# 先将开始日期和目标日期映射到星期数组的位置上(星期一索引为0)，
+# 然后通过模运算计算出目标日期要经过多少天才能到达开始日期。
+# 然后用开始日期减去那个时间差即得到结果日期。
+
+#
+from dateutil.relativedelta import relativedelta
+from dateutil.rrule import *
+d = datetime.now()
+print(d + relativedelta(weekday=FR))
+print(d + relativedelta(weekday=FR(-1)))
