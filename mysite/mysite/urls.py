@@ -15,9 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import *
 from django.contrib import admin
-from mysite.view import hello
+from mysite.view import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^hello/$', hello),
+    url(r'^time/$', current_datetime),
+    url(r'^now/$', current_datetime),
+    url(r'^now/plus/(\d{1,2})/$', hour_ahead),
+    
+    #blog
+    url(r'^blog/', include('blog.urls')),
+    
 ]

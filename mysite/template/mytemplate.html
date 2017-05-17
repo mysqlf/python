@@ -1,0 +1,14 @@
+{% extends "header.html" %}
+
+{% block title %}The current time{% endblock %}
+
+{% block content %}
+<p>It is now {{ nows }}.</p>
+
+{% endblock %}
+{% block footer %}
+<hr>
+{% include 'footer.html' %}
+<p>尾部会覆盖base.html里面的尾部,如果写在block标签里面的话</p>
+{% endblock %}
+
