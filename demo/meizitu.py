@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 import os
 import sys
+import time
 
 
 class mzitu():
@@ -23,6 +24,7 @@ class mzitu():
             href = a['href']
             # 调用html函数把href参数传递过去！href是啥还记的吧？ 就是套图的地址哦！！不要迷糊了哦！
             self.html(href)
+            sleep(1)
 
     def html(self, href):  # 这个函数是处理套图地址获得图片的页面地址
         html = self.request(href)
