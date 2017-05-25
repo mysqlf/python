@@ -10,8 +10,8 @@ f=open('filename.gz','rt')
 with gzip.open('filename.gz','rt') as f:
     text=f.read()
     print(text)
+f.close()
 
-    
 import bz2
 with bz2.open('filename.bz2','wt') as f:
     f.write(data)
@@ -19,6 +19,7 @@ f=open('filename.bz2','rt')
 with bz2.open('filename.bz2','rt') as f:
     text=f.read()
     print(text)
+f.close()
 # gzip.open() 和 bz2.open() 还有一个特性， 
 # 它们可以作用在一个已存在并以二进制模式打开的文件上。
 # 也就是文件锁对其没有影响

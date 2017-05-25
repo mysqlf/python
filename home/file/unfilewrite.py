@@ -7,6 +7,7 @@
 with open('temp.txt','wt') as f:
     f.write('which is always equal to the length of the string')
 #使用xt则是检验文件是否存在,存在则不能写入
+#x = exist 吧
 #不覆盖文件的形式
 with open('temp.txt','xt') as f:
     f.write('which is always equal to the length of the string')
