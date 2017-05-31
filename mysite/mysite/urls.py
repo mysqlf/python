@@ -16,6 +16,9 @@ Including another URLconf
 from django.conf.urls import *
 from django.contrib import admin
 from mysite.view import *
+from django.conf.urls import url
+from django.contrib.auth import views as auth_views
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -26,5 +29,7 @@ urlpatterns = [
     
     #blog
     url(r'^blog/', include('blog.urls')),
-    
+    url(r'^accounts/', include('django.contrib.auth.urls')),
+    #url(r'^accounts/',auth_views.login,name="login"),
+    url(r'^resetpassword/passwordsent/$', auth_views.password_reset_done, name='password_reset'),
 ]

@@ -13,7 +13,12 @@
       {{ form.title }}
       {{ form.content }}
       {{ form.tags }}
-      <button type="submit" class="btn btn-primary">发 布</button>
+
+      {% if user.is_staff %}
+    <button type="submit" class="btn btn-primary">发 布</button> 
+   <!--  <a class="btn btn-primary" href="{% url 'article_publish' %}" role="button">发布新文章</a> -->
+  {% endif %}
+    
     </form>
   </div>
 </div>
