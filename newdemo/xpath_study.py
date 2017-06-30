@@ -15,4 +15,4 @@ con = sel.xpath('//div/p/text()')  # [text()="hello"]
 print(type(con))
 print(len(con))
 print(con[0])
-# H
+# 
