@@ -4,7 +4,7 @@
 #导入模块
 import pymysql
 import time
-import datetime
+
 import os
 """
   Purpose: 备份数据库
@@ -40,5 +40,5 @@ def backup_database(backupDate=''):
             os.remove(fileName)
         os.system("mysqldump -h%s -u%s -p%s %s --default_character-set=%s > %s" %(dbHost,dbUser,dbPasswd,dbName,dbCharset,fileName))
     print ('The database backup success! %s'%time.strftime('%Y-%m-%d %H:%M:%S'))
-
-backup_database()
+if __name__ == '__main__':
+    backup_database()
