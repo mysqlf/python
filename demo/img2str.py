@@ -80,19 +80,16 @@ def convert_image(image_path):
             canvas_x,canvas_y=x*EMOJI_SIZE,y*EMOJI_SIZE
             new_im.paste(emoji,box=(canvas_x,canvas_y,canvas_x+EMOJI_SIZE,canvas_y+EMOJI_SIZE),mask=emoji)
     print("Finished drawing emojified image ...")
-    #new_im.show()
-    target_path=os.path.join(os.path.dirname(image_path),'emojified.bmp')
+    new_im.show()
+    target_path=os.path.join(os.path.dirname(image_path),image_path+'.bmp')
     new_im.save(target_path)
     print("Image saved here: %s"%target_path)
 def main(imgpath):
-    
-    
     load_emojis()
     convert_image(imgpath)
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('file')
-
     args = parser.parse_args()
     imgpath = args.file
     main(imgpath)
