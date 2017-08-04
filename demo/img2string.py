@@ -19,6 +19,7 @@ def select_ascii_char(r,g,b):
     gray=int((19595*r+38469*g+7472*b)>>16)
     unit=256.0/len(ascii_char)
     return ascii_char[int(gray/unit)]
+    
 def output(imgpath,witdth=100,height=100):
     im=Image.open(imgpath)
     im=im.resize((witdth,height),Image.NEAREST)
