@@ -11,7 +11,7 @@ print(html.escape(s))
 tmp = html.escape(s)
 print(html.escape(s, quote=False))
 # 处理的是ASCII文本，并且想将非ASCII文本对应的编码实体嵌入进去，
-# 可以给某些I/O函数传递参数errors='xmlcharrefreplace' 来达到这个目。
+# 可以给某些I/O函数传递参数errors='xmlcharrefreplace' 来达到这个目的。
 s = 'Spicy Jalapeño'
 print(s.encode('ascii', errors="xmlcharrefreplace"))
 # 替换文本中的编码实体
