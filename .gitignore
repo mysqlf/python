@@ -6,3 +6,5 @@
 *.log
 dist
 build
+TWN*
+CHN*
