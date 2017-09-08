@@ -14,7 +14,7 @@ from mpl_toolkits.basemap import Basemap
 from matplotlib.patches import Polygon
 from matplotlib.colors import rgb2hex
 
-plt.Figure(figsize=(16,8))
+plt.figure(figsize=(16,8))
 m = Basemap(
     llcrnrlon=77, 
     llcrnrlat=14, 
@@ -26,7 +26,7 @@ m = Basemap(
     lon_0=100
     )
 m.drawcoastlines(linewidth=1.5)
-m.readshapefile('CHN_adm1', 'states', drawbounds=True)
+m.readshapefile('adm/CHN_adm1', 'states', drawbounds=True)
 
 df=pd.read_csv('men.csv')
 df['省名']=df.地区.str[:2]
@@ -58,7 +58,7 @@ for nshape,seg in enumerate(m.states):
     poly=Polygon(seg,facecolor=color,edgecolor=color)
     ax.add_patch(poly)
 
-m.readshapefile('TWN_adm1', 'states', drawbounds=True)
+m.readshapefile('adm/TWN_adm1', 'states', drawbounds=True)
 for nshape,seg in enumerate(m.states):
     poly=Polygon(seg,facecolor='r')
     ax.add_patch(poly)
@@ -66,3 +66,4 @@ fig1 = plt.gcf()
 #plt.show()
 plt.draw()
 fig1.savefig('tessstttyyy.png', dpi=100)
+plt.show()
