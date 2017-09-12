@@ -18,3 +18,9 @@ class QuotesItem(scrapy.Item):
     author_url=scrapy.Field()
     tags=scrapy.Field()
 #genspider anjuke 'quotes.toscrape.com'
+class WangyiItem(scrapy.Item):
+    sing=scrapy.Field()
+    content=scrapy.Field()
+class GovItem(scrapy.Item):
+    #num=scrapy.Field()
+    content=scrapy.Field()
