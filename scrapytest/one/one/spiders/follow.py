@@ -22,7 +22,6 @@ class FollowSpider(scrapy.Spider):
     #     for href in self.start_urls:
     #         yield scrapy.Request(href,callback=self.parse_dir_contents)
     #     self.start_urls.append(response.xpath('//ul/li[@class="next"]/a/@href').extract())
-    
     # def parse_dir_contents(self,response):
     #     for sel in response.xpath('//div[@class="col-md-8"]/div'):
     #         item= QuotesItem()

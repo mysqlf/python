@@ -9,7 +9,7 @@ data = [('John', 'Adams'),
 data = tablib.Dataset(*data, headers=head)
 data.append(('Zuo', 'Lang'))
 data.append_col((90, 67, 83), header='age')
-# print(data[:2])
+print(data[:2])
 # # [('John', 'Adams', 90), ('George', 'Washington', 67)]
 # print(data['first_name'])
 # # ['John', 'George', 'Zuo']

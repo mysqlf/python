@@ -14,9 +14,11 @@ class GovSpider(scrapy.Spider):
             url = 'http://www.gov.cn/ziliao/flfg/2005-06/14/content_6310_'+str(url)+'.htm'
             yield scrapy.Request(url,callback=self.parse_content)
 
+
     def parse_content(self,response):
-        for sel in response.xpath('//td[@class="p1"]'):
+        for sel in response.xpath('//*[@id="Zoom"]'):
             item= GovItem()
-            item['content']=sel.xpath('font/text()').extract()
+            print(sel.tags())
+            item['content']=sel.xpath('string(.)').extract()#获取多标签内的文字,适用于不规则页面内容获取
             yield item
 

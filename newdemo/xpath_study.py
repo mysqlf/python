@@ -2,11 +2,11 @@ from lxml import etree
 html = """
     <div>hellos
         <p>H</p>
-</div>
+    </div>
 <div>hehe</div>
     <div>hello
         <p>E</p>
-</div>
+    </div>
 <div>hehe</div>
 """
 sel = etree.HTML(html)
