@@ -3,20 +3,17 @@
 # @author Greedywolf
 from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
 from django.db.models import F
-from django.views.generic.list import ListView
 from django.shortcuts import render_to_response
-
 from django.contrib.admin.views.decorators import staff_member_required
 # Create your views here.
-
 from blog.models import Article
 
-
+from django.views.generic.list import ListView
 from django.views.generic.edit import FormView
-from blog.forms import ArticlePublishForm
-
-from django.http import Http404
 from django.views.generic.detail import DetailView
+
+from blog.forms import ArticlePublishForm
+from django.http import Http404
 from django.core.urlresolvers import reverse
 import qrcode
 import os

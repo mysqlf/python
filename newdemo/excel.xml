@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<Province name="湖南省">
+<City name="益阳市">
+<Shop>
+<WS_CODE>AH93</WS_CODE>
+<WS_NAME>益阳华亚东南汽车销售有限公司</WS_NAME>
+<WS_SHORTNAME>赫山区销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="永州市">
+<Shop>
+<WS_CODE>AH94</WS_CODE>
+<WS_NAME>湖南省新世通汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>冷水滩区销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="长沙市">
+<Shop>
+<WS_CODE>AH0131</WS_CODE>
+<WS_NAME>湖南华威汽车服务有限公司</WS_NAME>
+<WS_SHORTNAME>星沙销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AH0131</WS_CODE>
+<WS_NAME>湖南华威汽车服务有限公司</WS_NAME>
+<WS_SHORTNAME>中南销售店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AH66</WS_CODE>
+<WS_NAME>长沙市华亚汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>中南车城销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AH66</WS_CODE>
+<WS_NAME>长沙市华亚汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>宁乡销售（服务）店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AH53</WS_CODE>
+<WS_NAME>湖南天菱汽车销售有限公司</WS_NAME>
+<WS_SHORTNAME>麓谷车城销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="湘西州">
+<Shop>
+<WS_CODE>AH66</WS_CODE>
+<WS_NAME>长沙市华亚汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>吉首销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="邵阳市">
+<Shop>
+<WS_CODE>AH83</WS_CODE>
+<WS_NAME>邵阳永驰汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>双清区销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="常德市">
+<Shop>
+<WS_CODE>AH41</WS_CODE>
+<WS_NAME>常德市松意汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>常德大道销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="张家界市">
+<Shop>
+<WS_CODE>AH65</WS_CODE>
+<WS_NAME>张家界荣昌汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>零阳销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="岳阳市">
+<Shop>
+<WS_CODE>AH78</WS_CODE>
+<WS_NAME>岳阳东恒汽车销售有限公司</WS_NAME>
+<WS_SHORTNAME>白石岭路销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AH78</WS_CODE>
+<WS_NAME>岳阳东恒汽车销售有限公司</WS_NAME>
+<WS_SHORTNAME>雷锋山销售店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="株洲市">
+<Shop>
+<WS_CODE>AH28</WS_CODE>
+<WS_NAME>株洲市东菱汽车销售服务有限责任公司</WS_NAME>
+<WS_SHORTNAME>红旗中路东南销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="郴州市">
+<Shop>
+<WS_CODE>AH95</WS_CODE>
+<WS_NAME>郴州东拓汽车贸易服务有限责任公司</WS_NAME>
+<WS_SHORTNAME>北湖区销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="衡阳市">
+<Shop>
+<WS_CODE>AH73</WS_CODE>
+<WS_NAME>衡阳欧冠汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>石鼓区销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+</Province>
+<Province name="广东省">
+<City name="江门市">
+<Shop>
+<WS_CODE>AB58</WS_CODE>
+<WS_NAME>江门市裕立汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>五邑路销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AB58</WS_CODE>
+<WS_NAME>江门市裕立汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>鹤山销售店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="茂名市">
+<Shop>
+<WS_CODE>AB33</WS_CODE>
+<WS_NAME>茂名市亿泰汽车有限公司</WS_NAME>
+<WS_SHORTNAME>亿泰销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="揭阳市">
+<Shop>
+<WS_CODE>AB62</WS_CODE>
+<WS_NAME>揭阳市鹏顺汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>揭阳销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="佛山市">
+<Shop>
+<WS_CODE>AB51</WS_CODE>
+<WS_NAME>广州华佑汽车维修有限公司</WS_NAME>
+<WS_SHORTNAME>奔达车城销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AB36</WS_CODE>
+<WS_NAME>佛山市顺德亚飞汽车销售有限公司</WS_NAME>
+<WS_SHORTNAME>大良东南销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AB43</WS_CODE>
+<WS_NAME>佛山市键马汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>海八路销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AB43</WS_CODE>
+<WS_NAME>佛山市键马汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>三水区销售店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="阳江市">
+<Shop>
+<WS_CODE>AB53</WS_CODE>
+<WS_NAME>阳江市华庆汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>金山路销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="梅州市">
+<Shop>
+<WS_CODE>AB66</WS_CODE>
+<WS_NAME>梅州市利兴汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>梅江区销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="深圳市">
+<Shop>
+<WS_CODE>AB59</WS_CODE>
+<WS_NAME>深圳市顺顺达汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>龙岗区销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AB59</WS_CODE>
+<WS_NAME>深圳市顺顺达汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>宝安区销售（服务）店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="清远市">
+<Shop>
+<WS_CODE>AB63</WS_CODE>
+<WS_NAME>清远安红汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>广清大道销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="惠州市">
+<Shop>
+<WS_CODE>AB20</WS_CODE>
+<WS_NAME>东莞市华顺汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>金山车城销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AB20</WS_CODE>
+<WS_NAME>东莞市华顺汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>惠州河南岸销售店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="东莞市">
+<Shop>
+<WS_CODE>AB20</WS_CODE>
+<WS_NAME>东莞市华顺汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>寮步销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AB20</WS_CODE>
+<WS_NAME>东莞市华顺汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>常平销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="肇庆市">
+<Shop>
+<WS_CODE>AB67</WS_CODE>
+<WS_NAME>肇庆旭峰汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>肇庆大道销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="韶关市">
+<Shop>
+<WS_CODE>AB64</WS_CODE>
+<WS_NAME>韶关市帝利汽车销售有限公司</WS_NAME>
+<WS_SHORTNAME>韶南大道销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="河源市">
+<Shop>
+<WS_CODE>AB59</WS_CODE>
+<WS_NAME>深圳市顺顺达汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>源城区销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="中山市">
+<Shop>
+<WS_CODE>AB61</WS_CODE>
+<WS_NAME>中山市东驰汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>东升镇销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AB61</WS_CODE>
+<WS_NAME>中山市东驰汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>小榄镇销售店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="湛江市">
+<Shop>
+<WS_CODE>AB70</WS_CODE>
+<WS_NAME>江门市裕立汽车销售服务有限公司湛江分公司</WS_NAME>
+<WS_SHORTNAME>海田汽车城销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="汕头市">
+<Shop>
+<WS_CODE>AB62</WS_CODE>
+<WS_NAME>揭阳市鹏顺汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>汕头销售（服务）店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="广州市">
+<Shop>
+<WS_CODE>AB51</WS_CODE>
+<WS_NAME>广州华佑汽车维修有限公司</WS_NAME>
+<WS_SHORTNAME>广汕天源路销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AB51</WS_CODE>
+<WS_NAME>广州华佑汽车维修有限公司</WS_NAME>
+<WS_SHORTNAME>番禺大道销售店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AB51</WS_CODE>
+<WS_NAME>广州华佑汽车维修有限公司</WS_NAME>
+<WS_SHORTNAME>新塘销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AB52</WS_CODE>
+<WS_NAME>广州市新瑞汽车维修服务有限公司</WS_NAME>
+<WS_SHORTNAME>鹤龙街销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AB65</WS_CODE>
+<WS_NAME>广州安红汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>花都销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="珠海市">
+<Shop>
+<WS_CODE>AB27</WS_CODE>
+<WS_NAME>珠海市时富贸易有限公司</WS_NAME>
+<WS_SHORTNAME>珠光车城销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AB68</WS_CODE>
+<WS_NAME>珠海裕信汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>明华三路销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="云浮市">
+<Shop>
+<WS_CODE>AB71</WS_CODE>
+<WS_NAME>云浮市华宇汽车销售有限服务公司</WS_NAME>
+<WS_SHORTNAME>云城区销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+</Province>
+<Province name="广西省">
+<City name="柳州市">
+<Shop>
+<WS_CODE>AM03</WS_CODE>
+<WS_NAME>广西宝骏汽车销售有限公司</WS_NAME>
+<WS_SHORTNAME>万友车城销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AM03</WS_CODE>
+<WS_NAME>广西宝骏汽车销售有限公司</WS_NAME>
+<WS_SHORTNAME>广汽路销售店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="河池市">
+<Shop>
+<WS_CODE>AM12</WS_CODE>
+<WS_NAME>河池广润通汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>金城江区销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="桂林市">
+<Shop>
+<WS_CODE>AM11</WS_CODE>
+<WS_NAME>桂林灵川县北极汽车销售有限公司</WS_NAME>
+<WS_SHORTNAME>灵川县销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="南宁市">
+<Shop>
+<WS_CODE>AM08</WS_CODE>
+<WS_NAME>广西南宁铭典汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>锦云汽车城销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="百色市">
+<Shop>
+<WS_CODE>AM13</WS_CODE>
+<WS_NAME>百色广黔通汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>右江区销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+</Province>
+<Province name="江西省">
+<City name="鹰潭市">
+<Shop>
+<WS_CODE>AA71</WS_CODE>
+<WS_NAME>景德镇市恒益汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>手拉手汽车城销售店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="赣州市">
+<Shop>
+<WS_CODE>AA07</WS_CODE>
+<WS_NAME>赣州金顺汽车销售有限公司</WS_NAME>
+<WS_SHORTNAME>国际车城销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="九江市">
+<Shop>
+<WS_CODE>AA70</WS_CODE>
+<WS_NAME>九江市瑞九汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>九瑞路销售店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="抚州市">
+<Shop>
+<WS_CODE>AA65</WS_CODE>
+<WS_NAME>江西东南汽车服务有限公司</WS_NAME>
+<WS_SHORTNAME>抚州销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="上饶市">
+<Shop>
+<WS_CODE>AA27</WS_CODE>
+<WS_NAME>上饶市骏达三菱汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>三清山销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="萍乡市">
+<Shop>
+<WS_CODE>AA69</WS_CODE>
+<WS_NAME>萍乡市东之星汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>安源中大道销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="景德镇市">
+<Shop>
+<WS_CODE>AA71</WS_CODE>
+<WS_NAME>景德镇市恒益汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>洪源镇销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="宜春市">
+<Shop>
+<WS_CODE>AA68</WS_CODE>
+<WS_NAME>宜春市嘉运汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>袁州区销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="南昌市">
+<Shop>
+<WS_CODE>AA65</WS_CODE>
+<WS_NAME>江西东南汽车服务有限公司</WS_NAME>
+<WS_SHORTNAME>洪都大道销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+</Province>
+<Province name="海南省">
+<City name="海口市">
+<Shop>
+<WS_CODE>AE04</WS_CODE>
+<WS_NAME>海南正大实业有限公司</WS_NAME>
+<WS_SHORTNAME>高新汽车广场销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+</Province>
+<Province name="福建省">
+<City name="泉州市">
+<Shop>
+<WS_CODE>AA05</WS_CODE>
+<WS_NAME>福建省泉州华元汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>清濛销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AA05</WS_CODE>
+<WS_NAME>福建省泉州华元汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>晋江销售（服务）店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AA05</WS_CODE>
+<WS_NAME>福建省泉州华元汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>石狮销售店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="南平市">
+<Shop>
+<WS_CODE>AA18</WS_CODE>
+<WS_NAME>南平市闽北汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>西芹镇销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AA73</WS_CODE>
+<WS_NAME>南平市建阳区国盛汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>建阳区销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="宁德市">
+<Shop>
+<WS_CODE>AA01</WS_CODE>
+<WS_NAME>福建省东南汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>宁德蕉城销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="三明市">
+<Shop>
+<WS_CODE>AA61</WS_CODE>
+<WS_NAME>福建青顺汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>德安路销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="龙岩市">
+<Shop>
+<WS_CODE>AA36</WS_CODE>
+<WS_NAME>龙岩市兴润汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>考塘销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="厦门市">
+<Shop>
+<WS_CODE>AA04</WS_CODE>
+<WS_NAME>厦门市东南汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>海沧销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="漳州市">
+<Shop>
+<WS_CODE>AA62</WS_CODE>
+<WS_NAME>福建漳州发展汽车集团有限公司</WS_NAME>
+<WS_SHORTNAME>龙文北路销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="福州市">
+<Shop>
+<WS_CODE>AA01</WS_CODE>
+<WS_NAME>福建省东南汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>华夏销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AA01</WS_CODE>
+<WS_NAME>福建省东南汽车贸易有限公司</WS_NAME>
+<WS_SHORTNAME>经贸会展中心销售店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AA55</WS_CODE>
+<WS_NAME>福建裕新汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>尚干销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AA55</WS_CODE>
+<WS_NAME>福建裕新汽车销售服务有限公司</WS_NAME>
+<WS_SHORTNAME>福清销售服务店</WS_SHORTNAME>
+</Shop>
+<Shop>
+<WS_CODE>AA74</WS_CODE>
+<WS_NAME>福州市昶盛汽车服务有限公司</WS_NAME>
+<WS_SHORTNAME>晋安区销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+<City name="莆田市">
+<Shop>
+<WS_CODE>AA45</WS_CODE>
+<WS_NAME>莆田市万宝万腾汽车服务有限公司</WS_NAME>
+<WS_SHORTNAME>城涵大道销售服务店</WS_SHORTNAME>
+</Shop>
+</City>
+</Province>
+</list>

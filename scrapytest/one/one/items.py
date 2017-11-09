@@ -24,3 +24,9 @@ class WangyiItem(scrapy.Item):
 class GovItem(scrapy.Item):
     #num=scrapy.Field()
     content=scrapy.Field()
+class GanjiItem(scrapy.Item):
+    address=scrapy.Field()
+    price=scrapy.Field()
+    biaoqian=scrapy.Field()
+
+

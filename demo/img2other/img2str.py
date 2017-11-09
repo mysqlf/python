@@ -6,6 +6,7 @@ import os
 import sys
 from PIL import Image,ImageDraw
 import argparse
+import os.path
 EMOJI_SIZE=32
 emojis=[]
 avg_colors=[]
@@ -51,7 +52,9 @@ def find_emoji(color):
             index=i
     assert index>=0
     return emojis[index]
-
+#取得文件后缀 
+def file_extension(path):
+    return os.path.splitext(path)[1]
 def convert_image(image_path):
     try:
         img=Image.open(image_path)
@@ -71,7 +74,12 @@ def convert_image(image_path):
             rr,gg,bb=0,0,0
             for xx in range(startx,startx+unit):
                 for yy in range(starty,starty+unit):
-                    _r,_g,_b=img.getpixel((xx,yy))
+                    extension=file_extension(image_path)
+                    #因为png 文件像素不止三个值,所以需要加这个判断
+                    if extension=='.png':
+                        _r,_g,_b,_a=img.getpixel((xx,yy))
+                    else:
+                        _r,_g,_b=img.getpixel((xx,yy))
                     rr+=_r
                     gg+=_g
                     bb+=_b
